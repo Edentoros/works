@@ -184,7 +184,7 @@ body {
 }
 
 .main-screen {
-  background: url(../assets/bg-image-wrapper.png) 50% 50%;
+  background: url('../assets/bg-image-wrapper.png') 50% 50%;
   height: 744px;
   color: white;
 }
@@ -515,7 +515,7 @@ body {
 
 .news {
   height: 598px;
-  background: url(../assets/news-bg.png);
+  background: url('../assets/news-bg.png');
 }
 
 .news__content {
