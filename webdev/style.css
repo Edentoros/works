@@ -150,7 +150,7 @@ body {
 
 .nav__item:hover {
   cursor: pointer;
-  text-decoration: underline;
+  
   opacity: 1;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
