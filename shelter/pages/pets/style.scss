@@ -133,7 +133,7 @@ h6 {
     z-index: 100;
     margin: 0 auto;
     align-items: center;
-
+padding: 0 40px;
     height: 120px;
 
 
@@ -189,7 +189,48 @@ h6 {
         border-bottom: 3px solid #f1cdb3;
         padding-bottom: 2px;
     }
+    &__burger {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 1px;
+            background: #000;
+        }
+        span:nth-child(2) {
+            margin: 10px 0;
+        }
+    }
 }
+.navigation {
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+    display: none;
+    background-color: #fff;
+    padding: 10px 30px 30px 30px;
+    
+    &__menu {
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        
+        transition-duration: 400ms;
+    }
+    &__menu-item {
+        font-size: 30px;
+        line-height: 55px;
+        color: #545454;
+        font-family: "Arial"; }  
+    
+}
+.navigation.open {
+    display: block;
+    
+} 
 
 .main-screen {
     margin-top: 120px;
@@ -233,6 +274,7 @@ h6 {
         transition-duration: 500ms;
         max-height: 435px;
         margin-bottom: 30px;
+        border-radius: 9px;
     }
 
     &__item:hover {
@@ -303,6 +345,9 @@ h6 {
     &__page-count {
         padding: 18px 21px;
     }
+    &__page-count.active {
+        background-color: #f1cdb3;
+    }
 
     &__arrow-jump {
         padding: 18px 12px;
@@ -327,14 +372,14 @@ h6 {
 
 .footer {
     background: url("../../assets/images/footer-gradient-background.png") 50% 50% no-repeat;
-    max-height: 350px;
-    height: 100%;
+    height: 350px;
+    
 
     &__content {
         display: flex;
         flex-direction: row;
-        width: 1200px;
-        margin: 0 auto;
+       flex-wrap: wrap;
+        
 
         justify-content: space-between;
     }
@@ -345,6 +390,7 @@ h6 {
         max-height: 234px;
         height: 100%;
         padding-top: 61px;
+        
     }
 
     &__item:first-child {
@@ -428,6 +474,122 @@ h6 {
 
         img {
             margin-right: 20px;
+        }
+    }
+}
+@media screen and (max-width: 960px) {.container {
+    max-width: 708px;
+}
+.header {
+    position: static;
+}
+.nav {
+    padding: 0 30px;
+}
+.main-screen {
+    margin-top: 0;
+}
+.friends {&__cards {max-width: 580px;
+    margin-bottom: 40px;}
+&__navigation {
+    padding-bottom: 70px;
+}
+&__item:nth-child(n+7) {
+    display: none;
+}}
+.footer {
+
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; 
+      
+    height: 640px;
+    
+    &__content {
+        padding-top: 30px;
+    }
+    &__item {
+        padding-top: 0px;
+    }
+    &__item:last-child{
+        margin: 60px auto 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+}
+}
+
+@media screen and (max-width: 320px) {
+    .nav {
+        &__burger {display: flex;
+        }
+        &__menu {
+        display: none;
+    }
+    &__logo {
+        margin-right: 43px;
+    }}
+    .container {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    .friends {&__cards {
+        flex-direction: column;
+    }
+        &__title {
+            padding-top: 42px;
+            margin-bottom: 42px;
+            font-size: 24px;
+line-height: 130%;
+        }
+    
+    &__item:nth-child(n+4) {
+        display: none;
+    }}
+    .footer {height: 809px;
+            &__title {text-align: center;
+                font-size: 25px;
+line-height: 130%;
+            }
+            &__phone {
+                margin-bottom: 40px;
+            }
+            &__location:first-child {
+                width: 302px;
+                margin: 40px 0;
+            }
+            &__item:last-child{
+                margin: 56px auto 0 auto;
+                text-align: center;
+                padding: 0;
+            }
+    }
+}
+@media screen and (max-width: 690px) {
+    .nav {
+        &__burger {display: flex;
+        }
+        
+        &__menu {
+        display: none;
+    }}
+    .friends__title {
+               
+        font-size: 24px;
+line-height: 130%;
+    }
+    .friends__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer { height: 890px;
+        &__content {
+            margin: 0 auto;
+            max-width: 370px;
+        }
+        &__location:first-child {
+            width: 302px;
+            margin: 40px 0;
+        }&__item:first-child {
+            margin-bottom: 20px;
         }
     }
 }
