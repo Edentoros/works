@@ -224,22 +224,25 @@ h6 {
   position: absolute;
   right: 10px;
   z-index: 100;
-  display: none;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
   background-color: #fff;
-  padding: 10px 30px 30px 30px;
+  padding: 60px 30px 30px 30px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 .navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
 }
 
 .navigation__menu-item {
@@ -250,7 +253,8 @@ h6 {
 }
 
 .navigation.open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .main-screen {
