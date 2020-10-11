@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("/assets/fonts/ArialMT.eot");
+    src: url("/assets/fonts/ArialMT.eot?#iefix") format("embedded-opentype"),
+        url("/assets/fonts/ArialMT.woff") format("woff"),
+        url("/assets/fonts/ArialMT.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("/assets/fonts/Georgia.eot");
+    src: url("/assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"),
+        url("/assets/fonts/Georgia.woff") format("woff"),
+        url("/assets/fonts/Georgia.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    z-index: 100;
+    margin: 0 auto;
+    align-items: center;
+
+    height: 120px;
+
+
+    &__logo {
+        display: block;
+    }
+
+    &__logo:hover .nav__logo-title {
+        color: #292929;
+    }
+
+    &__logo-title {
+        font-family: "Georgia";
+        font-size: 32px;
+        line-height: 35.2px;
+        letter-spacing: 0.06em;
+        color: #545454;
+        text-align: center;
+    }
+
+    &__logo-subtitle {
+        font-family: "Arial";
+        font-size: 13px;
+        line-height: 14.95px;
+        letter-spacing: 0.1em;
+        color: #292929;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__menu {
+        max-width: 443px;
+        max-height: 27px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__menu-item {
+        font-size: 15px;
+        line-height: 24px;
+        color: #545454;
+        font-family: "Arial";
+    }
+
+    &__menu-item:hover {
+        color: #292929;
+    }
+
+    &__menu-item.active {
+        color: #545454;
+        border-bottom: 3px solid #f1cdb3;
+        padding-bottom: 2px;
+    }
+}
+
+.main-screen {
+    margin-top: 120px;
+    background-color: #f6f6f6;
+}
+
+.friends {
+    height: 100%;
+
+
+    &__title {
+        font-size: 35px;
+        font-family: "Georgia";
+        letter-spacing: 0.06em;
+        line-height: 130%;
+        color: #545454;
+        max-width: 400px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    &__cards {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 60px auto;
+    }
+
+    &__item {
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff;
+
+        text-align: center;
+        transition-duration: 500ms;
+        max-height: 435px;
+        margin-bottom: 30px;
+    }
+
+    &__item:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+
+    &__item:hover .friends__item-button {
+        background: #f1cdb3;
+    }
+
+    &__item-pic {
+        width: 270px;
+        height: 270px;
+    }
+
+    &__item-name {
+        font-size: 20px;
+        font-family: "Georgia";
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin: 30px 0;
+    }
+
+    &__item-button {
+        font-size: 17px;
+        font-family: "Georgia";
+        line-height: 130%;
+        color: #292929;
+        letter-spacing: 0.06em;
+        padding: 13px 43px;
+        border: 2px solid #f1cdb3;
+        border-radius: 100px;
+        max-width: 188px;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        transition-duration: 200ms;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        max-width: 340px;
+        margin: 30px auto 0 auto;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+
+    &__arrow,
+    &__arrow-jump,
+    &__page-count {
+        display: block;
+
+        height: 52px;
+        width: 52px;
+
+        border: 2px solid #f1cdb3;
+        border-radius: 50%;
+        transition-duration: 200ms;
+    }
+
+    &__arrow {
+        padding: 18px 19px;
+    }
+
+    &__page-count {
+        padding: 18px 21px;
+    }
+
+    &__arrow-jump {
+        padding: 18px 12px;
+    }
+
+    &__arrow:hover,
+    &__arrow-jump:hover,
+    &__page-count:hover {
+        background: #F1CDB3;
+    }
+
+    &__arrow.disabled svg path,
+    &__arrow-jump.disabled svg path {
+        fill: #cdcdcd;
+    }
+
+    &__arrow.disabled:hover,
+    &__arrow-jump.disabled:hover {
+        background: #f6f6f6;
+    }
+}
+
+.footer {
+    background: url("../../assets/images/footer-gradient-background.png") 50% 50% no-repeat;
+    max-height: 350px;
+    height: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        margin: 0 auto;
+
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-height: 234px;
+        height: 100%;
+        padding-top: 61px;
+    }
+
+    &__item:first-child {
+        max-width: 279px;
+    }
+
+    &__item:last-child {
+        display: block;
+        padding-top: 40px;
+
+        img {
+            max-height: 310px;
+        }
+    }
+
+
+    &__title {
+        font-size: 35px;
+        font-family: "Georgia";
+        letter-spacing: 0.06em;
+        line-height: 130%;
+        color: #fff;
+        text-align: left;
+        max-width: 279px;
+    }
+
+    &__mail {
+        font-family: Georgia;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        line-height: 115%;
+        max-width: 251px;
+        letter-spacing: 0.06em;
+        margin: 43px 0;
+        color: #f1cdb3;
+    }
+
+    &__phone {
+        font-family: Georgia;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        line-height: 115%;
+
+        letter-spacing: 0.06em;
+        max-width: 239px;
+        color: #f1cdb3;
+    }
+
+    &__location {
+        font-family: Georgia;
+        display: flex;
+        max-width: 302px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        line-height: 115%;
+
+        letter-spacing: 0.06em;
+
+        color: #f1cdb3;
+    }
+
+    &__location:nth-of-type(1) {
+        margin: 33px 0;
+
+        img {
+            margin-right: 20px;
+
+        }
+    }
+
+    &__location:nth-of-type(2) {
+        max-width: 270px;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+}
