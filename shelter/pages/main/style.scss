@@ -911,7 +911,11 @@ h6 {
       margin-bottom: 0;
     }
   }
-
+  .footer {
+    &__item:nth-child(2) {
+      margin-top: 70px;
+    }
+  }
   .donate {
     &__content {
       margin-bottom: 0;

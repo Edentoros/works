@@ -1044,6 +1044,9 @@ h6 {
   .about__text {
     margin-bottom: 0;
   }
+  .footer__item:nth-child(2) {
+    margin-top: 70px;
+  }
   .donate__content {
     margin-bottom: 0;
     padding-top: 10px;
