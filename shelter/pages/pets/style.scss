@@ -379,6 +379,12 @@ h6 {
     right: 25%;
     background: url(../../assets/icons/arrow-right.png) 50% 50% no-repeat;
   }
+  .slick-arrow.slick-prev:hover {
+    background-color: #fddcc4;
+  }
+  .slick-arrow.slick-next:hover {
+    background-color: #fddcc4;
+  }
 }
 .footer {
   background: url(noise_lines_transparent@2X.png),

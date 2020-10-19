@@ -527,6 +527,14 @@ h6 {
   background: url(../../assets/icons/arrow-right.png) 50% 50% no-repeat;
 }
 
+.friends__cards .slick-arrow.slick-prev:hover {
+  background-color: #fddcc4;
+}
+
+.friends__cards .slick-arrow.slick-next:hover {
+  background-color: #fddcc4;
+}
+
 .help__title {
   font-size: 35px;
   font-family: "Georgia";

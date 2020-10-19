@@ -454,6 +454,7 @@ h6 {
     transition-duration: 200ms;
     font-size: 0;
   }
+
   .slick-arrow.slick-prev {
     left: 0;
     background: url(../../assets/icons/arrow-left.png) 50% 50% no-repeat;
@@ -461,6 +462,12 @@ h6 {
   .slick-arrow.slick-next {
     right: 0;
     background: url(../../assets/icons/arrow-right.png) 50% 50% no-repeat;
+  }
+  .slick-arrow.slick-prev:hover {
+    background-color: #fddcc4;
+  }
+  .slick-arrow.slick-next:hover {
+    background-color: #fddcc4;
   }
 }
 .help {
