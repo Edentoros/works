@@ -1,15 +1,21 @@
 $(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    
+  }),
   $('.friends__cards').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {breakpoint: 1024,
-    settings: {slidesToShow: 2}},
-    {breakpoint: 770,
-    settings: {slidesToShow: 1}}
-  ]
-})
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {breakpoint: 1024,
+      settings: {slidesToShow: 2}},
+      {breakpoint: 770,
+      settings: {slidesToShow: 1}}
+    ]
+  })
 });
+
 var navbar = document.querySelector(".navigation");
 var ham = document.querySelector(".nav__burger");
 
@@ -21,6 +27,7 @@ function toggleHamburger(){
  
 
 };
+
 ham.addEventListener("click", toggleHamburger);
 
 
@@ -31,3 +38,12 @@ menuLinks.forEach(
   }
 );
 
+let width = window.outerWidth;
+const slider = document.querySelector('.help__content')
+console.log(width);
+  if (width < 480) {
+    slider.classList.toggle('slider')
+    
+  };
+  
+ 

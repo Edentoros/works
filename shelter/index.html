@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy House Shelter</title>
     <link rel="stylesheet" href="pages/main/style.css" />
+    
   </head>
 
   <body>
@@ -22,10 +23,20 @@
               <a href="./pages/pets/index.html" class="nav__menu-item"
                 >Our pets</a
               >
-              <a href="" class="nav__menu-item">Help the shelter</a>
+              <a href="#donate" class="nav__menu-item">Help the shelter</a>
               <a href="" class="nav__menu-item">Contacts</a>
+              
             </div>
+            <div class="nav__burger"><span></span>
+              <span></span>
+              <span></span></div>
           </nav>
+          <nav class="navigation">
+            <div class="navigation__container">
+              <div class="navigation__menu"><a href="../../index.html" class="navigation__menu-item">About the shelter</a>
+                <a href="pages/pets/index.html" class="navigation__menu-item">Our pets</a>
+                <a href="#donate" class="navigation__menu-item">Help the shelter</a>
+                <a href="" class="navigation__menu-item">Contacts</a></div></div></nav>
         </header>
         <section class="main-screen__content">
           <div class="main-screen__description">
@@ -77,40 +88,48 @@
             are looking for a house
           </h2>
           <div class="friends__cards">
-            <a class="friends__arrow" href="">
-              <img src="assets/icons/arrow-left.png" alt="" />
-            </a>
-            <div class="friends__item">
-              <img
-                src="assets/images/photo-1.png"
-                alt=""
-                class="friends__item-pic"
-              />
-              <h3 class="friends__item-name">Katrine</h3>
-              <a href="" class="friends__item-button">Learn more</a>
-            </div>
-            <div class="friends__item">
-              <img
-                src="assets/images/photo-2.png"
-                alt=""
-                class="friends__item-pic"
-              />
-              <h3 class="friends__item-name">Jennifer</h3>
-              <a href="" class="friends__item-button">Learn more</a>
-            </div>
-            <div class="friends__item">
-              <img
-                src="assets/images/photo-3.png"
-                alt=""
-                class="friends__item-pic"
-              />
-              <h3 class="friends__item-name">Woody</h3>
-              <a href="" class="friends__item-button">Learn more</a>
-            </div>
+                        <div class="friends__item">
+        <img src="../../assets/images/photo-1.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Katrine</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-2.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Jennifer</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-3.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Woody</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-4.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Sophia</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-5.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Timmy</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-6.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Charly</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-7.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Scarlett</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
+      <div class="friends__item">
+        <img src="../../assets/images/photo-8.png" alt="" class="friends__item-pic" />
+        <h3 class="friends__item-name">Freddie</h3>
+        <a href="" class="friends__item-button">Learn more</a>
+      </div>
 
-            <a class="friends__arrow" href="">
-              <img src="assets/icons/arrow-right.png" alt="" />
-            </a>
+            
           </div>
           <a href="" class="friends__button">Get to know the rest</a>
         </div>
@@ -150,7 +169,7 @@
           </div>
           <div class="help__item">
             <img src="assets/icons/help-8.png" alt="" class="help__item-pic" />
-            <p class="help__item-text">Collars / leashes</p>
+            <p class="help__item-text">Collars & leashes</p>
           </div>
           <div class="help__item">
             <img src="assets/icons/help-9.png" alt="" class="help__item-pic" />
@@ -159,14 +178,14 @@
         </div>
       </div>
     </section>
-    <section class="donate">
+    <section class="donate" id="donate">
       <div class="container">
         <div class="donate__content">
           <img src="assets/images/donate-pic.png" alt="" class="donate__pic" />
           <div class="donate__info">
             <h2 class="donate__title">You can also make a donation</h2>
             <h3 class="donate__bank-info">
-              Name of the bank / Type of bank account
+              Name of the bank / <span>Type of bank account</span>
             </h3>
             <a
               target="_blanc"
@@ -220,5 +239,10 @@
       </div>
     </footer>
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
   <script src="/pages/main/script.js"></script>
+  <script src="./assets/slick/slick.min.js"></script>
 </html>
