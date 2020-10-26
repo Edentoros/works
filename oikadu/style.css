@@ -1,0 +1,62 @@
+@import url(./normalize.css);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  background-color: #fa8c16;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 255px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 21px 0;
+  display: block;
+  margin-right: 15px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__search {
+  padding: 16px 0;
+}
+/*# sourceMappingURL=style.css.map */
