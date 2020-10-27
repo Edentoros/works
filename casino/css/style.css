@@ -419,6 +419,31 @@ body {
           box-shadow: none;
 }
 
+.games__catalog-item-wrapper-overview {
+  display: block;
+  color: white;
+  position: absolute;
+  top: 107px;
+  left: 60px;
+  max-width: 99px;
+  font-weight: 800;
+  background-color: gray;
+  padding: 7px 22px;
+  max-height: 30px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 3px 0px 0px #575757;
+  box-shadow: 0px 3px 0px 0px #575757;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.games__catalog-item-wrapper-overview:hover {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .description {
   background: url(../img/content-bg.svg);
   background-color: #1c1e2f;
@@ -676,7 +701,7 @@ body {
 }
 
 .info__payment-content img {
-  margin: 0 15px;
+  margin: 5px 15px;
 }
 
 .info__payment-content img:first-child {
@@ -1146,6 +1171,30 @@ body {
     padding: 14px;
     text-align: center;
   }
+  .games__catalog-item-wrapper-button {
+    left: 33px;
+    top: 40px;
+  }
+  .games__catalog-item-wrapper-overview {
+    left: 33px;
+    top: 85px;
+  }
+  .description__text {
+    padding-left: 10px;
+    padding-right: 6px;
+  }
+  .description__heading {
+    padding-left: 10px;
+  }
+  .description__title {
+    padding-left: 10px;
+  }
+  .description__subheading {
+    padding-left: 10px;
+  }
+  .description__list-item {
+    padding-left: 7px;
+  }
   .partners {
     padding-bottom: 30px;
   }
@@ -1161,6 +1210,9 @@ body {
   .partners__content-item:nth-child(4),
   .partners__content-item:nth-child(3) {
     margin-bottom: 16px;
+  }
+  .features__content-item {
+    padding: 0 15px;
   }
   .footer {
     font-size: 12px;
@@ -1221,8 +1273,15 @@ body {
   .games__catalog {
     max-width: 170px;
   }
+  .games__catalog-item-wrapper-button {
+    left: 33px;
+  }
+  .games__catalog-item-wrapper-overview {
+    left: 33px;
+  }
   .description__heading {
-    font-size: 34px;
+    font-size: 33px;
+    padding-left: 5px;
   }
   .features__content-item:nth-child(2) img {
     padding-left: 0;
