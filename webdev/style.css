@@ -188,6 +188,7 @@ body {
 
 .main-screen {
   background: url("./assets/bg-image-wrapper.png") 50% 50% no-repeat;
+  background-size: cover;
   background-color: #000;
   padding-bottom: 90px;
   max-height: 744px;
@@ -540,6 +541,7 @@ body {
 .news {
   background: url("./assets/news-bg.png") 50% 50% no-repeat;
   background-color: #000;
+  background-size: cover;
   padding-bottom: 380px;
 }
 
