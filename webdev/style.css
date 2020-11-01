@@ -582,6 +582,7 @@ body {
   width: 340px;
   margin: 0;
   display: block;
+  border-radius: 0;
 }
 
 .news__button {
@@ -845,6 +846,10 @@ body {
         -ms-flex-order: 1;
             order: 1;
   }
+  .idea__button-container {
+    max-width: 200px;
+    margin: 0 auto;
+  }
   .community__content {
     padding-top: 0;
     -webkit-box-orient: vertical;
@@ -884,6 +889,10 @@ body {
   }
   .implement__text {
     margin-left: 0;
+  }
+  .implement__button-container {
+    max-width: 200px;
+    margin: 0 auto;
   }
   .footer__logo {
     margin-right: 0;

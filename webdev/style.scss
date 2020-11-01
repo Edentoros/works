@@ -567,6 +567,7 @@ body {
   width: 340px;
   margin: 0;
   display: block;
+  border-radius: 0;
 }
 
 .news__button {
@@ -768,6 +769,7 @@ body {
   color: #818181;
 }
 /*# sourceMappingURL=style.css.map */
+// MEDIA QUERIES
 @media screen and (max-width: 950px) {
   .community {
     &__content {
@@ -825,6 +827,10 @@ body {
     &__text {
       order: 1;
     }
+    &__button-container {
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
   .community {
     &__content {
@@ -866,6 +872,10 @@ body {
     }
     &__text {
       margin-left: 0;
+    }
+    &__button-container {
+      max-width: 200px;
+      margin: 0 auto;
     }
   }
   .footer__logo {
