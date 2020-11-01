@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фронтенд разработчик Дмитрий Гуляев</title>
+  <link rel="stylesheet" href="source/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <ul class="navbar__content">
+          <li class="navbar__item"><a href="#about">ОБО МНЕ</a></li>
+          <li class="navbar__item"><a href="#skills">НАВЫКИ</a></li>
+          <li class="navbar__item"><a href="#works">РАБОТЫ</a></li>
+          <li class="navbar__item"><a href="#contact">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="main-screen" id="main-screen">
+      <div class="container">
+        <div class="main-screen__logo"><img src="/media/img/logo/logo-d.png" alt="" class="main-screen__logo-1" /><img
+            src="/media/img/logo/logo-g.png" alt="" class="main-screen__logo-2" /></div>
+        <h1 class="main-screen__title">ДМИТРИЙ ГУЛЯЕВ</h1>
+        <h2 class="main-screen__heading">Фронтенд-разработчик</h2>
+        <div class="arrow"><a href="#about"><img src="/media/img/icons/Arrow.png" alt="" /></a></div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title title">ОБО МНЕ</h2>
+        <div class="about__content">
+          <p class="about__description">Привет ! Меня зовут Дмитрий,
+            я начинающий веб-разработчик. На данный момент владею такими технологиями как HTML,
+            CSS (SCSS),
+            jQuery. Сейчас занимаюсь изучением JavaScript и фреймворка React.JS. Также,
+            являюсь профессиональным переводчиком и владею английским,
+            немецким и китайским (немного). </p>
+          <div class="about__pic"><img src="/media/img/dmitrii.JPG" alt="" /></div>
+        </div>
+        <div class="arrow"><a href="#skills"><img src="/media/img/icons/Arrow.svg" alt="" /></a></div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="skills__content">
+          <h2 class="skills__title title">НАВЫКИ</h2>
+          <h2 class="skills__description description"><span>html/css</span><span>jQuery framework</span><span>css
+              препроцессоры (sass)</span><span>Методология бэм</span><span>Git</span></h2>
+        </div>
+        <div class="arrow"><a href="#works"><img src="/media/img/icons/Arrow.svg" alt="" /></a></div>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="container">
+        <h2 class="works__title title">РАБОТЫ</h2>
+        <div class="works__content">
+          <div class="works__menu">
+            <div class="works__menu-item-wrap"><a href="./source/pages/application/index.html" class="works__menu-item"
+                target="_blanc">
+                <p class="works__menu-item-title">Landing page</p>
+                <p class="works__menu-item-description">Адаптивный лендинг мобильного приложения </p>
+              </a></div>
+            <div class="works__menu-item-wrap"><a href="./source/pages/intensive/index.html" class="works__menu-item"
+                target="_blanc">
+                <p class="works__menu-item-title">Landing page</p>
+                <p class="works__menu-item-description">Адаптивный лендинг онлайн-марафона </p>
+              </a></div>
+            <div class="works__menu-item-wrap"><a href="./source/pages/application/index.html" class="works__menu-item"
+                target="_blanc">
+                <p class="works__menu-item-title">Landing page</p>
+                <p class="works__menu-item-description">Адаптивный лендинг мобильного приложения </p>
+              </a></div>
+          </div>
+        </div>
+        <div class="arrow"><a href="#contact"><img src="/media/img/icons/Arrow.svg" alt="" /></a></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="contact__title title">КОНТАКТЫ</h2>
+        <h3 class="contact__text">Задумались о проекте? <span>Давайте поговорим.</span></h3><a
+          href="mailto:dmitriiguliaev@gmail.com" class="contact__button">Связаться</a>
+        <div class="contact__social">
+          <div class="contact__telegram"><a href="https://t.me/dimkabog" target="_blank"><img
+                src="/media/img/icons/telegram.svg" alt="" /></a></div>
+          <div class="contact__instagram"><a href="https://www.instagram.com/dmitrii_webdev/" target="_blank"><img
+                src="/media/img/icons/instagram.svg" alt="" /></a></div>
+          <div class="contact__linkedin"><a href="https://www.linkedin.com/in/dmitrii-guliaev/"><img
+                src="/media/img/icons/linkedin.svg" alt="" target="_blank" /></a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="menu"><span></span><span></span><span></span></div>
+  <div id="navigation" class="hidden">
+    <div class="nav">
+      <ul class="nav__list">
+        <li><a href="#about">ОБО МНЕ</a></li>
+        <li><a href="#skills">НАВЫКИ</a></li>
+        <li><a href="#works">РАБОТЫ</a></li>
+        <li><a href="#contact">КОНТАКТЫ</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="source/js/script.js"></script>
+</body>
+
+</html>

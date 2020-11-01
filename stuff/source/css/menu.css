@@ -1,0 +1,56 @@
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu {
+  padding-top: 25px;
+  background: #010491;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.menu .container {
+  max-width: 2000px;
+}
+
+.menu__close {
+  font-size: 27px;
+  color: black;
+  font-weight: 400;
+  padding: 7px 10px;
+  background: #FF924F;
+  position: absolute;
+  top: 55px;
+  right: 44px;
+  border-radius: 50%;
+}
+
+.menu__item:hover {
+  color: #F7F54E;
+}
+
+.menu__item {
+  font-family: 'Futura Bold';
+  font-size: 144px;
+  color: white;
+  margin: 25px 0 0 40px;
+}
+
+.menu__body {
+  position: relative;
+}
+
+.menu__content {
+  margin: 0 auto;
+  max-width: 830px;
+  text-align: center;
+}
+/*# sourceMappingURL=menu.css.map */
