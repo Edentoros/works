@@ -792,11 +792,18 @@ ul.nav__list li:hover a {
     display: none;
   }
   .main-screen {
+    &__heading {
+      margin-left: 20px;
+    }
+    &__title {
+      margin-left: 20px;
+    }
+
     &__logo {
       flex-direction: column;
       justify-self: flex-start;
-      align-items: center;
-      margin-left: 0;
+      align-items: flex-start;
+      margin-left: 40px;
       margin-top: 20px;
       &-1 {
         margin-right: 0;
@@ -810,12 +817,14 @@ ul.nav__list li:hover a {
   .about {
     &__description {
       margin-top: 10px;
+      margin-left: 50px;
+      max-width: 390px;
     }
   }
   .skills {
     &__description {
       font-size: 38px;
-      margin-left: 15px;
+      margin-left: 20px;
       line-height: 60px;
       &::before {
         top: 4px;
