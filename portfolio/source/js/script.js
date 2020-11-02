@@ -26,7 +26,7 @@ $(function () {
 });
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 500) {
+    if (y > 400) {
         $('.menu').fadeIn();
     } else {
         $('.menu').fadeOut();
