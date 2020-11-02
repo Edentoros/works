@@ -691,6 +691,9 @@ ul.nav__list li:hover a {
   .navbar {
     display: none;
   }
+  .nav__list {
+    font-size: 100px;
+  }
   .main-screen {
     &__title {
       margin-left: 20px;
@@ -789,6 +792,12 @@ ul.nav__list li:hover a {
     font-size: 75px;
     margin-left: 0;
     text-align: center;
+  }
+  .nav__list {
+    font-size: 70px;
+    li {
+      margin: 20px auto;
+    }
   }
   .navbar {
     display: none;
