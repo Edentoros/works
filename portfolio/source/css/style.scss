@@ -136,8 +136,8 @@ html {
 }
 
 .container {
-  max-width: 1300px;
-  padding: 10px;
+  max-width: 1200px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -204,6 +204,8 @@ html {
   margin-left: 30px;
 
   &__logo {
+    display: flex;
+    flex-direction: row;
     opacity: 0;
     margin-left: 40px;
     margin-top: 65px;
@@ -351,7 +353,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 40px 0 0 120px;
+    margin: 40px 0 0 60px;
     position: relative;
     padding-bottom: 300px;
   }
@@ -453,7 +455,7 @@ html {
         rgba(94, 94, 94, 0.5) 59%
       ),
       url(../../media/img/works-bg/casino.png) 50% 50% no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   &__menu-item-wrap:nth-child(4) {
     background: radial-gradient(
@@ -462,7 +464,7 @@ html {
         rgba(94, 94, 94, 0.5) 59%
       ),
       url(../../media/img/works-bg/webdev.png) 50% 50% no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   &__menu-item-wrap:nth-child(5) {
     background: radial-gradient(
@@ -470,8 +472,17 @@ html {
         rgba(94, 94, 94, 0.5) 23%,
         rgba(94, 94, 94, 0.5) 59%
       ),
+      url(../../media/img/works-bg/clinic.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &__menu-item-wrap:nth-child(6) {
+    background: radial-gradient(
+        circle,
+        rgba(94, 94, 94, 0.5) 23%,
+        rgba(94, 94, 94, 0.5) 59%
+      ),
       url(../../media/img/works-bg/shelter.png) 50% 50% no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -541,7 +552,7 @@ html {
   }
 
   &__button:hover {
-    box-shadow: 0px 0px 37px 5px rgba(247, 245, 78, 0.97);
+    background-color: #f76666;
   }
 }
 
@@ -649,4 +660,205 @@ ul.nav__list li a {
 
 ul.nav__list li:hover a {
   color: #f7f54e;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__description {
+    font-size: 28px;
+    margin-left: 70px;
+    margin-left: 30px;
+    &::before {
+      left: -50px;
+    }
+  }
+  .skills__description {
+    font-size: 61px;
+    margin-left: 90px;
+    line-height: 75px;
+  }
+  .about__pic img {
+    margin-top: 75px;
+    max-width: 250px;
+  }
+  .title {
+    font-size: 90px;
+  }
+  .works__menu {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 786px) {
+  .navbar {
+    display: none;
+  }
+  .main-screen {
+    &__title {
+      margin-left: 0;
+      margin-top: 35px;
+    }
+    &__heading {
+      margin-left: 0;
+      padding-bottom: 50px;
+    }
+    &__logo {
+      &-1 {
+        max-width: 200px;
+        max-height: 200px;
+      }
+      &-2 {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+  .title {
+    margin-left: 20px;
+  }
+  .about__description {
+    line-height: 34px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .skills {
+    &__description {
+      margin-left: 30px;
+      font-size: 67px;
+      line-height: 70px;
+      &::before {
+        left: -45px;
+      }
+      span {
+        position: relative;
+        &::before {
+          content: "";
+          background-color: #ff924f;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          top: 25px;
+          left: -35px;
+        }
+        &:first-child::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .works {
+    &__menu {
+      padding-bottom: 120px;
+      margin-left: 0;
+      &::before {
+        left: -45px;
+        display: none;
+      }
+    }
+  }
+  .contact {
+    &__text {
+      margin-left: 40px;
+      line-height: 70px;
+    }
+    &__button {
+      margin-bottom: 50px;
+    }
+  }
+  .about {
+    &__description {
+      line-height: 34px;
+      margin-top: 20px;
+      &::before {
+        display: none;
+      }
+    }
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__pic img {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .title {
+    font-size: 75px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .main-screen {
+    &__logo {
+      flex-direction: column;
+      justify-self: flex-start;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 20px;
+      &-1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .menu {
+    right: 20px;
+  }
+  .about {
+    &__description {
+      margin-top: 10px;
+    }
+  }
+  .skills {
+    &__description {
+      font-size: 38px;
+      margin-left: 15px;
+      line-height: 60px;
+      &::before {
+        top: 4px;
+        left: -35px;
+      }
+      span {
+        &::before {
+          left: -22px !important;
+          top: 20px;
+        }
+        &::before:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+  .contact {
+    &__text {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 470px) {
+  .container {
+    padding: 0 10px;
+  }
+  .title {
+    text-align: center;
+  }
+  .skills {
+    &__description {
+      margin-top: 25px;
+      &::before {
+        display: none;
+      }
+      span {
+        &:first-child::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

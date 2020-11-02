@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ИППП</title>
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- ymaps -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey=<9861b7cf-40b5-4478-84ba-c8abdab4203d>"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cmd-online.ru/bitrix/include/areas/officejs.php"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript" src="/widget/config.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="fixedHeader" style="top: -100px">
+      <header class="header header-fixed">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__logo">
+              <img src="img/logo-color.svg" alt="logo" width="144" />
+            </div>
+            <ul class="header__menu menu">
+              <li class="menu__item"><a href="#important">Важно знать</a></li>
+              <li class="menu__item"><a href="#researches">Исследования</a></li>
+              <li class="menu__item"><a href="#terms">Условия акции</a></li>
+              <li class="menu__item"><a href="#location">Где сдать</a></li>
+            </ul>
+            <div class="header__phone-cart-wrapper">
+              <div class="header__phone">
+                <a href="tel:+78007077881">8 800 707 7881</a>
+              </div>
+
+              <div id="basket-place-landing-fix" class="header__cart basket">
+                <div class="order-widget order-widget-basketinfo">
+                  <img src="svg/ico_cart_gray.svg" />
+                </div>
+                <!--div id="basket-place-landing" class="basket"></div-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <header class="header main-header">
+      <div class="container">
+        <div class="header-top-wrapper">
+          <div class="header__logo">
+            <a href="/"><img src="img/logo.svg" alt="logo" /></a>
+          </div>
+          <ul class="header__menu menu">
+            <li class="menu__item">
+              <a href="#important">Важно знать</a>
+            </li>
+            <li class="menu__item">
+              <a href="#researches">Исследования</a>
+            </li>
+            <li class="menu__item">
+              <a href="#terms">Условия акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#location">Где сдать</a>
+            </li>
+          </ul>
+          <div class="header__right right">
+            <a href="tel:+78007077881" class="right__phone"> 8 800 707 7881 </a>
+            <div id="basket-place-landing" class="basket header__cart fob">
+              <a href="" class="header__basket"
+                ><img src="img/basket-white.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__title">
+          <h1><span>Важно&nbsp;сохранять</span>гормональный баланс</h1>
+        </div>
+        <div class="header__subtitle">
+          <h2>
+            <span>Скидка&nbsp;20% </span>на&nbsp;гормональные исследования
+          </h2>
+        </div>
+        <div class="header__promo">
+          <h3>
+            по промокоду <span>Вбалансе</span>
+            до&nbsp;30&nbsp;ноября 2020 года
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <section class="afterheader-text" id="important">
+      <div class="container">
+        <p>
+          Гормоны – это биохимические «импульсы». Молекулы гормонов
+          вырабатываются в&nbsp;железах внутренней секреции и&nbsp;с&nbsp;током
+          крови разносятся по всему организму. Благодаря гормональной регуляции
+          все клетки, ткани и органы получают информацию о том, с какой
+          интенсивностью нужно&nbsp;работать. Так организм приспосабливается
+          к&nbsp;изменениям, которые постоянно происходят внутри и&nbsp;снаружи.
+        </p>
+      </div>
+    </section>
+
+    <section class="protection">
+      <div class="container">
+        <div class="protection__title">
+          <h2>Половые гормоны</h2>
+        </div>
+        <div class="protection__main main">
+          <div class="main__photo">
+            <img src="img/hormones.jpg" alt="couple" />
+          </div>
+          <div class="main__content content">
+            <div class="content__text">
+              <p>
+                <span
+                  >Андрогены и эстрогены – две основные группы половых
+                  гормонов.&nbsp;</span
+                >&nbsp;Основные андрогены: Тестостерон, Андростерон,
+                Андростендиол, Андростендион, Дегидроэпиандростерон
+                (ДГЭА)&nbsp;и&nbsp;др. К эстрогенам относят: Эстрадиол, Эстриол,
+                Эстрон. Также к&nbsp;половым гормонам принадлежит прогестерон.
+              </p>
+              <p>
+                <span
+                  >Обе группы гормонов присутствуют и в мужском организме,
+                  и&nbsp;в&nbsp;женском.</span
+                >
+                Все эстрогены когда-то были андрогенам, то есть в&nbsp;организме
+                обоих полов эстрогены образуются из андрогенов
+                путём&nbsp;химических реакций и при участии различных
+                ферментов.&nbsp; А&nbsp;вот количество половых гормонов у мужчин
+                и женщин различно. Это&nbsp;и&nbsp;определяет, как будет
+                выглядеть человек: как мужчина или как женщина.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="signs">
+      <div class="container">
+        <h2 class="signs__title">Признаки гормональных нарушений</h2>
+        <div class="signs__content">
+          <div class="signs__item">
+            <img src="svg/ico_female.svg" alt="" class="signs__item-pic" />
+
+            <h3 class="signs__item-title">У женщин</h3>
+            <ul class="signs__item-list">
+              <li class="signs__item-text">Перепады настроения</li>
+              <li class="signs__item-text">
+                Постоянная&nbsp;усталость, быстрая утомляемость
+              </li>
+              <li class="signs__item-text">Изменение массы тела</li>
+              <li class="signs__item-text">Повышенное потоотделение</li>
+              <li class="signs__item-text">
+                Потеря волос или избыточный рост волос
+              </li>
+              <li class="signs__item-text">Нарушение менструального цикла</li>
+              <li class="signs__item-text">
+                Проблемы с зачатием и вынашиванием
+              </li>
+            </ul>
+          </div>
+          <div class="signs__item">
+            <img src="svg/ico_male.svg" alt="" class="signs__item-pic" />
+
+            <h3 class="signs__item-title">У мужчин</h3>
+            <ul class="signs__item-list">
+              <li class="signs__item-text">Перепады настроения</li>
+              <li class="signs__item-text">
+                Постоянная&nbsp;усталость, быстрая утомляемость
+              </li>
+              <li class="signs__item-text">Избыточная масса тела</li>
+              <li class="signs__item-text">
+                Существенное&nbsp;уменьшение
+                мышечной&nbsp;массы&nbsp;и&nbsp;силы
+              </li>
+              <li class="signs__item-text">Снижение полового влечения</li>
+              <li class="signs__item-text">
+                Увеличение&nbsp;грудных&nbsp;желез по&nbsp;женскому&nbsp;типу
+                (гинекомастия)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hormones">
+      <div class="container">
+        <h2 class="hormones__title">Гормоны щитовидной&nbsp;железы</h2>
+        <div class="hormones__content">
+          <img src="img/hormones-pic.jpg" alt="" class="hormones__pic" />
+          <div class="hormones__text">
+            <p class="hormones__item">
+              Щитовидная железа – небольшой орган внутренней секреции,
+              расположенный на передней поверхности шеи и вырабатывающий
+              гормоны, которые оказывают влияние практически на все процессы,
+              происходящие в организме.
+            </p>
+            <p class="hormones__item">
+              <span
+                >Щитовидная железа регулирует обмен веществ в организме.</span
+              >
+              Гормоны щитовидной железы влияют на функцию нервной системы,
+              иммунный ответ, ритм сердечных сокращений, процессы свертывания
+              крови; модулируют эмоции, внимание, мышление и&nbsp;многое другое.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="symptoms">
+      <div class="container">
+        <h2 class="symptoms__title">
+          Симптомы нарушения функции щитовидной железы
+        </h2>
+        <div class="symptoms__content">
+          <div class="symptoms__item">
+            <h3 class="symptoms__subtitle">Гипертиреоз</h3>
+            <h4 class="symptoms__heading">
+              избыточная продукция гормонов щитовидной железы
+            </h4>
+            <img src="img/gipertireoz.jpg" alt="" class="symptoms__pic" />
+            <div class="symptoms__text">
+              <p class="symptoms__item-text">
+                Повышенная возбудимость, гиперактивность
+              </p>
+              <p class="symptoms__item-text">
+                Эмоциональная неустойчивость, раздражительность
+              </p>
+              <p class="symptoms__item-text">
+                Повышенный аппетит, который сопровождается снижением веса
+              </p>
+              <p class="symptoms__item-text">
+                Учащенное сердцебиение, чувство перебоев в&nbsp;работе сердца
+              </p>
+              <p class="symptoms__item-text">
+                Ломкость ногтей и выпадение волос
+              </p>
+              <p class="symptoms__item-text">
+                Нарушение менструального цикла у&nbsp;женщин
+              </p>
+              <p class="symptoms__item-text">Нарушение потенции у мужчин</p>
+            </div>
+          </div>
+          <div class="symptoms__item">
+            <h3 class="symptoms__subtitle">Гипотиреоз</h3>
+            <h4 class="symptoms__heading">
+              недостаточная продукция гормонов щитовидной железы
+            </h4>
+            <img src="img/gipotireoz.png" alt="" class="symptoms__pic" />
+            <div class="symptoms__text">
+              <p class="symptoms__item-text">Вялость, сонливость</p>
+              <p class="symptoms__item-text">Пониженное настроение</p>
+              <p class="symptoms__item-text">Ухудшение памяти и внимания</p>
+              <p class="symptoms__item-text">
+                Пониженный аппетит, который сопровождается увеличением веса
+              </p>
+              <p class="symptoms__item-text">
+                Повышение уровня холестерина в&nbsp;крови
+              </p>
+              <p class="symptoms__item-text">Боли в мышцах и суставах</p>
+              <p class="symptoms__item-text">
+                Нарушение менструального цикла у&nbsp;женщин
+              </p>
+              <p class="symptoms__item-text">Нарушение потенции у мужчин</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="researches" id="researches">
+      <div class="container">
+        <div class="researches__title">
+          <h2>Исследования</h2>
+        </div>
+
+        <div class="researches__subtitle">
+          <h3>
+            С 1 октября по 30 ноября 2020 года действует
+            <span>скидка 20%</span> на гормональные исследования. Скидка
+            предоставляется по&nbsp;промокоду <span>Вбалансе</span>
+            при оплате заказа в любом офисе CMD.
+          </h3>
+        </div>
+        <div class="researches__content">
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/diagnostika-parazitarnyh-invazij-rasprostranonnyh-v-srednej-polose/"
+                target="_blank"
+                >Лютеинизирующий гормон
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060001</span>
+              <button
+                class="item__order btn"
+                data-code="060001"
+                type="button"
+                onclick="clickOrder(this, '060001', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/serologicheskaja-diagnostika-parazitarnyh-zabolevanij_300069/"
+                target="_blank"
+                >Фолликулостимулирующий гормон</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060002</span>
+              <button
+                class="item__order btn"
+                data-code="060002"
+                type="button"
+                onclick="clickOrder(this, '060002', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/analiz-kala-na-jajca-gelmintov_110203/"
+                target="_blank"
+                >Эстрадиол</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060003</span>
+              <button
+                class="item__order btn"
+                data-code="060003"
+                type="button"
+                onclick="clickOrder(this, '060003', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/analiz-kala-na-jajca-gelmintov-i-cisty-prostejshih-s-ispolzovanijem-koncentratora-parasep-110209/"
+                target="_blank"
+                >Прогестерон</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060005</span>
+              <button
+                class="item__order btn"
+                data-code="060005"
+                type="button"
+                onclick="clickOrder(this, '060005', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/issledovanije-soskoba-na-enterobioz-jajca-ostric_110204/"
+                target="_blank"
+                >Тестостерон</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060202</span>
+              <button
+                class="item__order btn"
+                data-code="060202"
+                type="button"
+                onclick="clickOrder(this, '060202', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Дегидроэпиандростерон-сульфат</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060201</span>
+              <button
+                class="item__order btn"
+                data-code="060201"
+                type="button"
+                onclick="clickOrder(this, '060201', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Тиреотропный гормон</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060305</span>
+              <button
+                class="item__order btn"
+                data-code="060305"
+                type="button"
+                onclick="clickOrder(this, '060305', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Тироксин свободный</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060304</span>
+              <button
+                class="item__order btn"
+                data-code="060304"
+                type="button"
+                onclick="clickOrder(this, '060304', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Трийодтиронин свободный</a
+              ></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060303</span>
+              <button
+                class="item__order btn"
+                data-code="060303"
+                type="button"
+                onclick="clickOrder(this, '060303', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Гормональный статус (мужской)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300013</span>
+              <button
+                class="item__order btn"
+                data-code="300013"
+                type="button"
+                onclick="clickOrder(this, '300013', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Гормональный статус (женский)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300014</span>
+              <button
+                class="item__order btn"
+                data-code="300014"
+                type="button"
+                onclick="clickOrder(this, '300014', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Гормональный статус (в&nbsp;менопаузе)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300105</span>
+              <button
+                class="item__order btn"
+                data-code="300105"
+                type="button"
+                onclick="clickOrder(this, '300105', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Гормональный статус женский (включает прогестерон)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300132</span>
+              <button
+                class="item__order btn"
+                data-code="300132"
+                type="button"
+                onclick="clickOrder(this, '300132', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Диагностика функции щитовидной железы (скрининг)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300103</span>
+              <button
+                class="item__order btn"
+                data-code="300103"
+                type="button"
+                onclick="clickOrder(this, '300103', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Диагностика функции щитовидной железы (мониторинг&nbsp;терапии)
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 300104</span>
+              <button
+                class="item__order btn"
+                data-code="300104"
+                type="button"
+                onclick="clickOrder(this, '300104', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="researches__item item">
+            <span class="item__title"
+              ><a
+                href="https://www.cmd-online.ru/analizy-i-tseny/obshhij-analiz-krovi-oak-s-lejkocitarnoj-formuloj-complete-blood-count-bez-soe_110013/"
+                target="_blank"
+                >Пролактин
+              </a></span
+            >
+            <div class="researches-right-wrapper">
+              <span class="item__code">Код: 060004</span>
+              <button
+                class="item__order btn"
+                data-code="060004"
+                type="button"
+                onclick="clickOrder(this, '060004', false);"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount" id="terms">
+      <div class="container">
+        <div class="discount__title">
+          <h2>Как получить скидку</h2>
+        </div>
+        <div class="discount__terms">
+          <div class="term">
+            <div class="circle">1</div>
+            <p class="term__text">
+              Выберите из&nbsp;предложенного списка необходимые исследования,
+              используя кнопку «Заказать».
+            </p>
+          </div>
+          <div class="term">
+            <div class="circle">2</div>
+            <p class="term__text">
+              Оформите предзаказ на&nbsp;выбранные исследования. Цена будет
+              указана без&nbsp;скидки.
+            </p>
+          </div>
+          <div class="term">
+            <div class="circle">3</div>
+            <p class="term__text">
+              Придите в&nbsp;любой из&nbsp;офисов CMD и&nbsp;получите скидку
+              при&nbsp;оплате заказа у&nbsp;администратора офиса.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="terms">
+      <div class="container">
+        <div class="terms__title">
+          <h2>Условия акции</h2>
+        </div>
+        <div class="terms__terms">
+          <span
+            >Во&nbsp;всех офисах CMD вы можете получить скидку&nbsp;20%
+            при&nbsp;заказе любых исследований, участвующих в&nbsp;акции.</span
+          >
+          <span>Скидка предоставляется по промокоду «Вбалансе».</span>
+
+          <span
+            >Акция действует с&nbsp;1&nbsp;октября&nbsp;по&nbsp;30&nbsp;ноября
+            2020&nbsp;года.</span
+          >
+          <span
+            >Акция не&nbsp;распространяется на&nbsp;взятие биоматериала
+            и&nbsp;не&nbsp;суммируется с&nbsp;другими скидками
+            и&nbsp;акциями.</span
+          >
+          <span
+            >Скидка не&nbsp;может быть рассчитана при&nbsp;оформлении предзаказа
+            на&nbsp;сайте.</span
+          >
+          <span
+            >Скидку на&nbsp;ранее оформленный предзаказ можно получить
+            у&nbsp;администратора офиса CMD.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <div class="location__header">
+          <h2>Где пройти исследование</h2>
+        </div>
+        <div class="location__map" id="map">
+          <div id="map-canvas"></div>
+        </div>
+        <style type="text/css">
+          #map,
+          #map div {
+            height: 600px;
+          }
+        </style>
+        <script type="text/javascript">
+          ymaps.ready(init);
+          var myMap;
+          var marker1 = "img/map_marker_red.svg";
+          var marker2 = "img/map_marker_blue.svg";
+
+          function init() {
+            myMap = new ymaps.Map(
+              "map-canvas",
+              {
+                center: [55.752383, 37.620781],
+                zoom: 10,
+                controls: ["zoomControl"],
+              },
+              {
+                suppressMapOpenBlock: true,
+              }
+            );
+            myMap.behaviors.disable("scrollZoom");
+            var myGroup = new ymaps.GeoObjectCollection();
+
+            $.each(offices, function (key1, value) {
+              $.each(offices[key1], function (key2, value) {
+                $.each(offices[key1][key2], function (key3, value) {
+                  var temp = {};
+                  if (
+                    offices[key1][key2][key3]["not_opened"] &&
+                    offices[key1][key2][key3]["not_opened"] == true
+                  ) {
+                    temp = {
+                      iconLayout: "default#image",
+                      iconImageHref: marker1,
+                      iconImageSize: [60, 65],
+                      iconImageOffset: [-35, -80],
+                    };
+                  } else {
+                    temp = {
+                      iconLayout: "default#image",
+                      iconImageHref: marker2,
+                      iconImageSize: [60, 65],
+                      iconImageOffset: [-35, -80],
+                    };
+                  }
+
+                  myGroup.add(
+                    new ymaps.Placemark(
+                      [
+                        offices[key1][key2][key3]["coord_lat"],
+                        offices[key1][key2][key3]["coord_long"],
+                      ],
+                      {
+                        hintContent: offices[key1][key2][key3]["address"],
+                        locationUrl: offices[key1][key2][key3]["url"],
+                      },
+                      temp
+                    )
+                  );
+                });
+              });
+            });
+
+            myMap.geoObjects.add(myGroup);
+            myMap.geoObjects.events.add("click", function (e) {
+              var target = e.get("target");
+              window.open(
+                "https://cmd-online.ru" + target.properties.get("locationUrl"),
+                "_blank"
+              );
+            });
+          }
+        </script>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__text">
+          © 2020, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора
+        </div>
+        <div class="footer__links">
+          <a href="https://www.facebook.com/cmd.online.social" rel="nofollow"
+            ><img src="img/soc_facebook.svg" alt=""
+          /></a>
+          <a href="https://vk.com/cmd.online" rel="nofollow"
+            ><img src="img/soc_vk.svg" alt=""
+          /></a>
+          <a href="https://ok.ru/cmdonline" rel="nofollow"
+            ><img src="img/soc_ok.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/cmd_lab/" rel="nofollow"
+            ><img src="img/soc_instagram.svg" alt=""
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw"
+            rel="nofollow"
+            ><img src="img/soc_youtube.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--- <section class="warning">
+      <span class="warning__text"
+        >О&nbsp;ВОЗМОЖНЫХ ПРОТИВОПОКАЗАНИЯХ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ
+        СО&nbsp;СПЕЦИАЛИСТОМ</span
+      >
+    </section>
+--->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!--- --->
+    <script
+      type="text/javascript"
+      src="/widget/basketinfolandingblue/basketinfolanding.js"
+    ></script>
+    <? require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/include/widgets/widgets.php'); ?>
+    <!--- --->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#basket-place-landing-fix img").attr({
+            src: "svg/ico_cart_gray.svg",
+          });
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
