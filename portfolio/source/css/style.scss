@@ -143,9 +143,9 @@ html {
 
 .title {
   font-family: "Futura Bold";
-  font-size: 144px;
+  font-size: 130px;
   color: white;
-  margin: 25px 0 0 40px;
+  margin: 25px 0 0 60px;
 }
 
 .arrow {
@@ -402,7 +402,7 @@ html {
   }
 
   &__menu-item-title {
-    transition-duration: 300ms;
+    transition-duration: 150ms;
   }
 
   &__menu-item-description {
@@ -437,16 +437,18 @@ html {
     .works__menu-item-title {
       visibility: hidden;
       opacity: 0;
-      transition-duration: 500ms;
+      transition-duration: 200ms;
     }
   }
 
   &__menu-item-wrap:first-child {
     background: url(../../media/img/works-bg/application.png);
+    background-size: cover;
   }
 
   &__menu-item-wrap:nth-child(2) {
     background: url(../../media/img/works-bg/marathon.png);
+    background-size: cover;
   }
   &__menu-item-wrap:nth-child(3) {
     background: url(../../media/img/works-bg/casino.png) 50% 50% no-repeat;
@@ -473,9 +475,9 @@ html {
 
   &__text {
     font-family: "Futura PT Book";
-    font-size: 74px;
+    font-size: 60px;
     line-height: 95px;
-    margin: 40px 0 0 120px;
+    margin: 40px 0 0 200px;
     color: #f7f54e;
     position: relative;
     span {
@@ -548,7 +550,7 @@ html {
   cursor: pointer;
   position: fixed;
   top: 70px;
-  right: 70px;
+  right: 50px;
   border-radius: 50%;
   background: #ff924f;
 
@@ -737,15 +739,35 @@ ul.nav__list li:hover a {
   }
   .works {
     &__menu {
-      padding-bottom: 120px;
+      padding-bottom: 75px;
       margin-left: 0;
       &::before {
         left: -45px;
         display: none;
       }
     }
+    &__menu-item {
+      background: radial-gradient(
+        circle,
+        rgba(34, 34, 34, 0.5) 23%,
+        rgba(34, 34, 34, 0.5) 59%
+      );
+      &-title {
+        padding: 5px 0;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000;
+      }
+      &-description {
+        visibility: visible;
+        opacity: 1;
+        color: #fff;
+      }
+    }
   }
   .contact {
+    &__social {
+      padding-bottom: 20px;
+    }
     &__text {
       margin-left: 40px;
       line-height: 70px;
@@ -777,6 +799,16 @@ ul.nav__list li:hover a {
     margin-left: 0;
     text-align: center;
   }
+  .menu {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 20px;
+    span {
+      margin-bottom: 4px;
+      width: 23px;
+    }
+  }
   .nav__list {
     font-size: 70px;
     li {
@@ -806,9 +838,7 @@ ul.nav__list li:hover a {
       }
     }
   }
-  .menu {
-    right: 20px;
-  }
+
   .about {
     &__description {
       margin-top: 10px;
@@ -854,10 +884,40 @@ ul.nav__list li:hover a {
   }
   .title {
     text-align: center;
+    font-size: 50px;
+  }
+  .main-screen {
+    margin-left: 0;
+    &__logo {
+      margin-left: 30px;
+    }
+    &__title {
+      margin-left: 10px;
+    }
+    &__heading {
+      margin-left: 10px;
+      padding-bottom: 35px;
+    }
+  }
+  .about {
+    &__content {
+      padding-bottom: 35px;
+    }
+    &__description {
+      line-height: 25px !important;
+      margin-left: 8%;
+
+      b {
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
   }
   .skills {
     &__description {
       margin-top: 25px;
+      font-size: 35px;
+      line-height: 50px;
       &::before {
         display: none;
       }
@@ -865,7 +925,31 @@ ul.nav__list li:hover a {
         &:first-child::before {
           opacity: 1;
         }
+        &::before {
+          top: 15px;
+        }
       }
+    }
+  }
+  .works {
+    &__menu {
+      padding-bottom: 35px;
+    }
+  }
+  .contact {
+    &__text {
+      font-size: 40px;
+      margin-top: 10px;
+      margin-left: 50px;
+      line-height: 45px;
+      &::before {
+        display: block;
+        top: 10px;
+        left: -50px;
+      }
+    }
+    &__button {
+      margin-top: 40px;
     }
   }
 }

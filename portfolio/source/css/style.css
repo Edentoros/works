@@ -146,9 +146,9 @@ html {
 
 .title {
   font-family: "Futura Bold";
-  font-size: 144px;
+  font-size: 130px;
   color: white;
-  margin: 25px 0 0 40px;
+  margin: 25px 0 0 60px;
 }
 
 .arrow {
@@ -466,8 +466,8 @@ html {
 }
 
 .works__menu-item-title {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 
 .works__menu-item-description {
@@ -504,16 +504,18 @@ html {
 .works__menu-item-wrap:hover .works__menu-item-title {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .works__menu-item-wrap:first-child {
   background: url(../../media/img/works-bg/application.png);
+  background-size: cover;
 }
 
 .works__menu-item-wrap:nth-child(2) {
   background: url(../../media/img/works-bg/marathon.png);
+  background-size: cover;
 }
 
 .works__menu-item-wrap:nth-child(3) {
@@ -544,9 +546,9 @@ html {
 
 .contact__text {
   font-family: "Futura PT Book";
-  font-size: 74px;
+  font-size: 60px;
   line-height: 95px;
-  margin: 40px 0 0 120px;
+  margin: 40px 0 0 200px;
   color: #f7f54e;
   position: relative;
 }
@@ -627,7 +629,7 @@ html {
   cursor: pointer;
   position: fixed;
   top: 70px;
-  right: 70px;
+  right: 50px;
   border-radius: 50%;
   background: #ff924f;
   z-index: 1000;
@@ -826,12 +828,27 @@ ul.nav__list li:hover a {
     opacity: 0;
   }
   .works__menu {
-    padding-bottom: 120px;
+    padding-bottom: 75px;
     margin-left: 0;
   }
   .works__menu::before {
     left: -45px;
     display: none;
+  }
+  .works__menu-item {
+    background: radial-gradient(circle, rgba(34, 34, 34, 0.5) 23%, rgba(34, 34, 34, 0.5) 59%);
+  }
+  .works__menu-item-title {
+    padding: 5px 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .works__menu-item-description {
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+  }
+  .contact__social {
+    padding-bottom: 20px;
   }
   .contact__text {
     margin-left: 40px;
@@ -867,6 +884,16 @@ ul.nav__list li:hover a {
     margin-left: 0;
     text-align: center;
   }
+  .menu {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 20px;
+  }
+  .menu span {
+    margin-bottom: 4px;
+    width: 23px;
+  }
   .nav__list {
     font-size: 70px;
   }
@@ -897,9 +924,6 @@ ul.nav__list li:hover a {
   .main-screen__logo-1 {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-  .menu {
-    right: 20px;
   }
   .about__description {
     margin-top: 10px;
@@ -939,15 +963,62 @@ ul.nav__list li:hover a {
   }
   .title {
     text-align: center;
+    font-size: 50px;
+  }
+  .main-screen {
+    margin-left: 0;
+  }
+  .main-screen__logo {
+    margin-left: 30px;
+  }
+  .main-screen__title {
+    margin-left: 10px;
+  }
+  .main-screen__heading {
+    margin-left: 10px;
+    padding-bottom: 35px;
+  }
+  .about__content {
+    padding-bottom: 35px;
+  }
+  .about__description {
+    line-height: 25px !important;
+    margin-left: 8%;
+  }
+  .about__description b {
+    font-weight: 700;
+    font-size: 30px;
   }
   .skills__description {
     margin-top: 25px;
+    font-size: 35px;
+    line-height: 50px;
   }
   .skills__description::before {
     display: none;
   }
   .skills__description span:first-child::before {
     opacity: 1;
+  }
+  .skills__description span::before {
+    top: 15px;
+  }
+  .works__menu {
+    padding-bottom: 35px;
+  }
+  .contact__text {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
+    line-height: 45px;
+  }
+  .contact__text::before {
+    display: block;
+    top: 10px;
+    left: -50px;
+  }
+  .contact__button {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
