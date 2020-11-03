@@ -356,15 +356,14 @@ html {
     flex-wrap: wrap;
     margin: 40px 0 0 60px;
     position: relative;
-    padding-bottom: 300px;
-  }
+    padding-bottom: 150px;
+    &::before {
+      position: absolute;
+      content: url(../../media/img/icons/works.png);
 
-  &__menu::before {
-    position: absolute;
-    content: url(../../media/img/icons/works.png);
-
-    left: -70px;
-    top: 10px;
+      left: -60px;
+      top: 25px;
+    }
   }
 
   &__menu-item-wrap {
@@ -550,7 +549,7 @@ html {
   cursor: pointer;
   position: fixed;
   top: 70px;
-  right: 50px;
+  right: 34px;
   border-radius: 50%;
   background: #ff924f;
 
