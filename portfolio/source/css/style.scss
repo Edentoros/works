@@ -656,6 +656,9 @@ ul.nav__list li:hover a {
       left: -50px;
     }
   }
+  .nav {
+    font-size: 125px;
+  }
   .skills__description {
     font-size: 61px;
     margin-left: 90px;
@@ -682,11 +685,13 @@ ul.nav__list li:hover a {
   .main-screen {
     &__title {
       margin-left: 20px;
-      margin-top: 35px;
+      margin-top: 20px;
+      font-size: 45px;
     }
     &__heading {
       margin-left: 20px;
       padding-bottom: 50px;
+      font-size: 40px;
     }
     &__logo {
       margin-left: 40px;
@@ -722,7 +727,7 @@ ul.nav__list li:hover a {
         position: relative;
         &::before {
           content: "";
-          background-color: #ff924f;
+          background-color: #000;
           width: 20px;
           height: 20px;
           border-radius: 50%;
@@ -765,7 +770,7 @@ ul.nav__list li:hover a {
   }
   .contact {
     &__social {
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
     &__text {
       margin-left: 40px;
@@ -806,6 +811,16 @@ ul.nav__list li:hover a {
     span {
       margin-bottom: 4px;
       width: 23px;
+    }
+    &.open span {
+      &:nth-child(1) {
+        top: 6px;
+        right: 1px;
+      }
+      &:nth-child(3) {
+        top: -6px;
+        left: -1px;
+      }
     }
   }
   .nav__list {
@@ -885,6 +900,9 @@ ul.nav__list li:hover a {
     text-align: center;
     font-size: 50px;
   }
+  .nav__list {
+    font-size: 50px;
+  }
   .main-screen {
     margin-left: 0;
     &__logo {
@@ -938,12 +956,12 @@ ul.nav__list li:hover a {
   .contact {
     &__text {
       font-size: 40px;
-      margin-top: 10px;
+      margin-top: 30px;
       margin-left: 50px;
       line-height: 45px;
       &::before {
         display: block;
-        top: 10px;
+        top: 20px;
         left: -50px;
       }
     }
