@@ -113,7 +113,24 @@ html {
   border-radius: 10px;
 }
 
+
+
 /* Основные стили */
+
+
+.modal-wrapper.open {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -100;
+}
+
+.modal-wrapper {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+  transition-duration: 500ms;
+}
+
 .modal {
   background: url(../img/modal-bg.png) no-repeat 50% 50%;
 
@@ -444,5 +461,66 @@ html {
     color: #90A4AF;
     letter-spacing: normal;
     text-transform: none;
+  }
+}
+
+/* SMALL DESKTOP */
+@media screen and (max-width: 1280px) {
+  .modal {
+    &__nav {
+      &-logo {
+        margin-right: 10px;
+      }
+    }
+
+    &__tournament {
+      margin-right: 0;
+    }
+
+    &__game {
+      margin-right: 10px;
+    }
+  }
+
+  .score {
+    &__nav {
+      justify-content: space-around;
+      padding-left: 15px;
+
+      &-title {
+        margin-right: 0 !important;
+
+      }
+    }
+
+    &__team {
+
+      justify-content: space-between;
+
+
+      &-title {
+        width: 160px;
+      }
+
+      &-placing {
+        margin-right: 20px;
+      }
+
+      &-info {
+        margin-right: 20px;
+      }
+
+      &-round {
+        margin-right: 0;
+      }
+
+      &-round:nth-of-type(3) {
+        margin-right: 0;
+      }
+
+      &-points {
+        margin-right: 75px;
+      }
+    }
   }
 }

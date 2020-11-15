@@ -112,6 +112,20 @@ html {
 }
 
 /* Основные стили */
+.modal-wrapper.open {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -100;
+}
+
+.modal-wrapper {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
 .modal {
   background: url(../img/modal-bg.png) no-repeat 50% 50%;
   background-color: #3a454b;
@@ -469,5 +483,49 @@ html {
   color: #90A4AF;
   letter-spacing: normal;
   text-transform: none;
+}
+
+/* SMALL DESKTOP */
+@media screen and (max-width: 1280px) {
+  .modal__nav-logo {
+    margin-right: 10px;
+  }
+  .modal__tournament {
+    margin-right: 0;
+  }
+  .modal__game {
+    margin-right: 10px;
+  }
+  .score__nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 15px;
+  }
+  .score__nav-title {
+    margin-right: 0 !important;
+  }
+  .score__team {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .score__team-title {
+    width: 160px;
+  }
+  .score__team-placing {
+    margin-right: 20px;
+  }
+  .score__team-info {
+    margin-right: 20px;
+  }
+  .score__team-round {
+    margin-right: 0;
+  }
+  .score__team-round:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .score__team-points {
+    margin-right: 75px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
