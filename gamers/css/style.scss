@@ -281,6 +281,16 @@ html {
       &:last-of-type {
         margin-right: 55px;
       }
+
+      &-small {
+        display: none;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #ffffff;
+      }
     }
   }
 
@@ -363,6 +373,11 @@ html {
       justify-content: space-between;
       width: 115px;
       margin-right: 95px;
+      text-align: center;
+
+      &:first-of-type {
+        color: red;
+      }
 
       &:nth-of-type(3) {
         margin-right: 100px;
@@ -442,7 +457,7 @@ html {
   &::before {
     position: absolute;
     content: "Убийств";
-    bottom: -27px;
+    top: -60px;
     font-size: 13px;
     line-height: 18px;
     color: #90A4AF;
@@ -454,8 +469,8 @@ html {
   &::after {
     position: absolute;
     content: "Место";
-    bottom: -27px;
-    right: -40px;
+    top: -60px;
+    right: -3px;
     font-size: 13px;
     line-height: 18px;
     color: #90A4AF;
@@ -467,6 +482,13 @@ html {
 /* SMALL DESKTOP */
 @media screen and (max-width: 1280px) {
   .modal {
+    &__content {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__nav {
       &-logo {
         margin-right: 10px;
@@ -484,18 +506,38 @@ html {
 
   .score {
     &__nav {
-      justify-content: space-around;
+      justify-content: stretch;
       padding-left: 15px;
 
       &-title {
-        margin-right: 0 !important;
+        margin-right: 30px;
+        white-space: nowrap;
+
+        &:first-of-type {
+          margin-right: 225px;
+
+        }
+
+        &:nth-child(3) {
+          margin-left: 40px;
+        }
+
+        &:nth-child(4) {
+          margin-left: 35px;
+        }
+
+        &:last-child {
+          margin-left: 34px;
+        }
 
       }
     }
 
     &__team {
 
-      justify-content: space-between;
+      &:last-of-type .score__team-placing {
+        margin-right: 11px;
+      }
 
 
       &-title {
@@ -511,15 +553,353 @@ html {
       }
 
       &-round {
-        margin-right: 0;
+        margin-right: 25px;
       }
 
       &-round:nth-of-type(3) {
-        margin-right: 0;
+        margin-right: 25px;
       }
 
       &-points {
         margin-right: 75px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1003px) {
+  .modal {
+    &__game {
+      margin-right: 0;
+    }
+
+    &__nav {
+
+
+      &-logo {
+        top: 40px;
+        left: 30%;
+        position: absolute;
+      }
+    }
+
+
+    &__tournament-title {
+      font-size: 30px;
+      line-height: 36.03px;
+
+      max-width: 400px;
+    }
+  }
+
+  .score {
+    &__nav-title {
+      &:first-of-type {
+        margin-right: 186px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+
+    &__team {
+      &::before {
+        display: none;
+      }
+
+      padding-left: 15px;
+
+      &-points {
+        margin-right: 10px;
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width:930px) {
+  .score__nav-title:first-of-type {
+    margin-right: 175px;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .score {
+    &__content {
+      margin-top: 30px;
+    }
+
+    &__nav {
+      &-title {
+        font-size: 12px;
+
+        &:first-of-type {
+          margin-right: 120px;
+        }
+
+        &:last-of-type {
+          white-space: initial;
+        }
+      }
+    }
+
+    &__team {
+      padding-left: 10px;
+
+      &-logo {
+        display: none;
+      }
+
+      &-placing {
+        margin-right: 10px;
+      }
+
+      &-round {
+        width: 90px;
+        margin-right: 40px;
+
+        &:nth-of-type(3) {
+          margin-right: 40px;
+        }
+
+        &::after {
+          right: -22px;
+        }
+
+        &:last-of-type::after {
+          right: -18px;
+        }
+      }
+
+      &:last-of-type {
+        padding-left: 5px;
+
+        &-placing {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  .round {
+    &::after {
+      top: -45px;
+    }
+
+    &::before {
+      top: -45px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .modal {
+    &__content {
+      padding: 0 10px;
+    }
+
+    &__game-logo {
+      margin-left: 10px;
+    }
+
+    &__tournament-title {
+      font-size: 20px;
+    }
+
+    &__close {
+      top: 40px;
+
+      button {
+        font-size: 15px;
+      }
+    }
+
+    &__nav {
+      padding-left: 10px;
+
+      &-logo {
+        top: 65px;
+      }
+
+      &::after {
+        bottom: -30px;
+      }
+    }
+
+  }
+
+  .score {
+    margin-top: 60px;
+
+    &__nav {
+
+
+      &-title:first-of-type {
+        margin-right: 110px;
+      }
+
+      &-title {
+        font-size: 10px;
+
+        &-small {
+          display: block;
+          flex: 0 1 20%;
+          text-align: center;
+        }
+
+
+
+        &:nth-of-type(2) {
+          display: none;
+        }
+
+
+
+        &:nth-of-type(3) {
+          display: none;
+
+        }
+
+        &:nth-of-type(6) {
+          display: none;
+
+        }
+
+        &:nth-of-type(5) {
+          display: none;
+
+        }
+
+        &:nth-of-type(4) {
+          display: none;
+
+        }
+
+        &:last-of-type {
+          margin-left: 30px;
+
+        }
+
+
+      }
+    }
+
+    &__content {
+      margin-top: 10px;
+
+    }
+
+    &__team {
+      padding: 15px 0 15px 4px;
+
+      &-title {
+        font-size: 16px;
+        width: 155px;
+      }
+
+      &-round {
+        width: 67px;
+        margin-right: 5px;
+
+        &:nth-of-type(4)>.score__team-kills {
+          margin-right: 0;
+          width: 66px;
+        }
+
+        &:nth-of-type(3) {
+          margin-right: 5px;
+        }
+      }
+
+      &-info {
+
+        margin-right: 0;
+      }
+
+      &-kills {
+        padding: 5px 5px;
+        border-right: 1px solid white;
+        margin-right: 0;
+      }
+
+      &-place {
+        padding: 5px 10px;
+      }
+
+      &-points {
+        margin-left: 0px;
+        padding: 5px 5px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .round {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h3.score__nav-title-small {
+    &.two {
+      margin-left: 10px;
+    }
+
+    &.three {
+      margin-right: -35px;
+    }
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .modal {
+    &__nav-logo {
+      left: 10%;
+    }
+
+    &__game-info {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .score {
+    &__nav {
+      display: none;
+    }
+
+    &__team {
+      &-placing {
+        display: none;
+      }
+
+      &-round {
+        width: 50px;
+      }
+
+      &-title {
+        width: 115px;
+        font-size: 14px;
+      }
+
+      &-kills {
+        padding: 5px 5px;
+      }
+
+      &-place {
+        padding: 5px 5px;
+      }
+
+      &-points {
+        padding: 5px 5px;
       }
     }
   }

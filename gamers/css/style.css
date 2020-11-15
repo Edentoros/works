@@ -306,6 +306,16 @@ html {
   margin-right: 55px;
 }
 
+.score__nav-title-small {
+  display: none;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 .score__content {
   margin-top: 47px;
 }
@@ -401,6 +411,11 @@ html {
           justify-content: space-between;
   width: 115px;
   margin-right: 95px;
+  text-align: center;
+}
+
+.score__team-round:first-of-type {
+  color: red;
 }
 
 .score__team-round:nth-of-type(3) {
@@ -465,7 +480,7 @@ html {
 .round::before {
   position: absolute;
   content: "Убийств";
-  bottom: -27px;
+  top: -60px;
   font-size: 13px;
   line-height: 18px;
   color: #90A4AF;
@@ -476,8 +491,8 @@ html {
 .round::after {
   position: absolute;
   content: "Место";
-  bottom: -27px;
-  right: -40px;
+  top: -60px;
+  right: -3px;
   font-size: 13px;
   line-height: 18px;
   color: #90A4AF;
@@ -487,6 +502,19 @@ html {
 
 /* SMALL DESKTOP */
 @media screen and (max-width: 1280px) {
+  .modal__content {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .modal__nav-logo {
     margin-right: 10px;
   }
@@ -497,17 +525,29 @@ html {
     margin-right: 10px;
   }
   .score__nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     padding-left: 15px;
   }
   .score__nav-title {
-    margin-right: 0 !important;
+    margin-right: 30px;
+    white-space: nowrap;
   }
-  .score__team {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .score__nav-title:first-of-type {
+    margin-right: 225px;
+  }
+  .score__nav-title:nth-child(3) {
+    margin-left: 40px;
+  }
+  .score__nav-title:nth-child(4) {
+    margin-left: 35px;
+  }
+  .score__nav-title:last-child {
+    margin-left: 34px;
+  }
+  .score__team:last-of-type .score__team-placing {
+    margin-right: 11px;
   }
   .score__team-title {
     width: 160px;
@@ -519,13 +559,245 @@ html {
     margin-right: 20px;
   }
   .score__team-round {
-    margin-right: 0;
+    margin-right: 25px;
   }
   .score__team-round:nth-of-type(3) {
-    margin-right: 0;
+    margin-right: 25px;
   }
   .score__team-points {
     margin-right: 75px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1003px) {
+  .modal__game {
+    margin-right: 0;
+  }
+  .modal__nav-logo {
+    top: 40px;
+    left: 30%;
+    position: absolute;
+  }
+  .modal__tournament-title {
+    font-size: 30px;
+    line-height: 36.03px;
+    max-width: 400px;
+  }
+  .score__nav-title:first-of-type {
+    margin-right: 186px;
+  }
+  .score__nav-title:last-child {
+    margin-right: 0;
+  }
+  .score__team {
+    padding-left: 15px;
+  }
+  .score__team::before {
+    display: none;
+  }
+  .score__team-points {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .score__nav-title:first-of-type {
+    margin-right: 175px;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .score__content {
+    margin-top: 30px;
+  }
+  .score__nav-title {
+    font-size: 12px;
+  }
+  .score__nav-title:first-of-type {
+    margin-right: 120px;
+  }
+  .score__nav-title:last-of-type {
+    white-space: initial;
+  }
+  .score__team {
+    padding-left: 10px;
+  }
+  .score__team-logo {
+    display: none;
+  }
+  .score__team-placing {
+    margin-right: 10px;
+  }
+  .score__team-round {
+    width: 90px;
+    margin-right: 40px;
+  }
+  .score__team-round:nth-of-type(3) {
+    margin-right: 40px;
+  }
+  .score__team-round::after {
+    right: -22px;
+  }
+  .score__team-round:last-of-type::after {
+    right: -18px;
+  }
+  .score__team:last-of-type {
+    padding-left: 5px;
+  }
+  .score__team:last-of-type-placing {
+    margin-right: 7px;
+  }
+  .round::after {
+    top: -45px;
+  }
+  .round::before {
+    top: -45px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .modal__content {
+    padding: 0 10px;
+  }
+  .modal__game-logo {
+    margin-left: 10px;
+  }
+  .modal__tournament-title {
+    font-size: 20px;
+  }
+  .modal__close {
+    top: 40px;
+  }
+  .modal__close button {
+    font-size: 15px;
+  }
+  .modal__nav {
+    padding-left: 10px;
+  }
+  .modal__nav-logo {
+    top: 65px;
+  }
+  .modal__nav::after {
+    bottom: -30px;
+  }
+  .score {
+    margin-top: 60px;
+  }
+  .score__nav-title:first-of-type {
+    margin-right: 110px;
+  }
+  .score__nav-title {
+    font-size: 10px;
+  }
+  .score__nav-title-small {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    text-align: center;
+  }
+  .score__nav-title:nth-of-type(2) {
+    display: none;
+  }
+  .score__nav-title:nth-of-type(3) {
+    display: none;
+  }
+  .score__nav-title:nth-of-type(6) {
+    display: none;
+  }
+  .score__nav-title:nth-of-type(5) {
+    display: none;
+  }
+  .score__nav-title:nth-of-type(4) {
+    display: none;
+  }
+  .score__nav-title:last-of-type {
+    margin-left: 30px;
+  }
+  .score__content {
+    margin-top: 10px;
+  }
+  .score__team {
+    padding: 15px 0 15px 4px;
+  }
+  .score__team-title {
+    font-size: 16px;
+    width: 155px;
+  }
+  .score__team-round {
+    width: 67px;
+    margin-right: 5px;
+  }
+  .score__team-round:nth-of-type(4) > .score__team-kills {
+    margin-right: 0;
+    width: 66px;
+  }
+  .score__team-round:nth-of-type(3) {
+    margin-right: 5px;
+  }
+  .score__team-info {
+    margin-right: 0;
+  }
+  .score__team-kills {
+    padding: 5px 5px;
+    border-right: 1px solid white;
+    margin-right: 0;
+  }
+  .score__team-place {
+    padding: 5px 10px;
+  }
+  .score__team-points {
+    margin-left: 0px;
+    padding: 5px 5px;
+    margin-right: 0;
+  }
+  .round::before {
+    display: none;
+  }
+  .round::after {
+    display: none;
+  }
+  h3.score__nav-title-small.two {
+    margin-left: 10px;
+  }
+  h3.score__nav-title-small.three {
+    margin-right: -35px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .modal__nav-logo {
+    left: 10%;
+  }
+  .modal__game-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .score__nav {
+    display: none;
+  }
+  .score__team-placing {
+    display: none;
+  }
+  .score__team-round {
+    width: 50px;
+  }
+  .score__team-title {
+    width: 115px;
+    font-size: 14px;
+  }
+  .score__team-kills {
+    padding: 5px 5px;
+  }
+  .score__team-place {
+    padding: 5px 5px;
+  }
+  .score__team-points {
+    padding: 5px 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
