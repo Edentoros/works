@@ -24,6 +24,8 @@ a {
     margin: 0 auto;
 }
 
+$animate: all 0.2s ease-in-out;
+
 /* NAVBAR */
 .nav {
     padding-bottom: 26px;
@@ -120,12 +122,34 @@ a {
         color: #000000;
         margin-top: 12px;
         transition-duration: 200ms;
+        position: relative;
 
-        &:hover {
-            text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            width: 0px;
+            height: 2px;
+            margin: 5px 0 0;
+            transition: $animate;
+            transition-duration: 0.45s;
+            opacity: 0;
+            background-color: #ef7f1a;
+            ;
         }
 
+        &:hover {
+            //color: #ef7f1a;
+
+            &:before {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+
         &-right {
+            position: relative;
             transition-duration: 200ms;
 
             font-weight: 400;
@@ -135,8 +159,27 @@ a {
             margin-top: 12px;
             margin-right: 55px;
 
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                width: 0px;
+                height: 2px;
+                margin: 5px 0 0;
+                transition: $animate;
+                transition-duration: 0.45s;
+                opacity: 0;
+                background-color: #ef7f1a;
+
+            }
+
             &:hover {
-                text-shadow: 0px 3px 2px rgba(150, 150, 150, 1);
+                // color: #ef7f1a;
+
+                &:before {
+                    width: 100%;
+                    opacity: 1;
+                }
             }
 
         }
@@ -146,6 +189,7 @@ a {
         margin: 0 240px;
         flex-grow: 0.5;
         margin-top: 5px;
+        text-align: center;
     }
 
     &__search {
@@ -157,14 +201,22 @@ a {
         position: relative;
 
         &-input {
-            transition-duration: 200ms;
             display: none;
+        }
+
+        &:hover {
+            filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
         }
 
     }
 
     &__cart {
         margin-top: 12px;
+        transition-duration: 300ms;
+
+        &:hover {
+            filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
+        }
     }
 }
 
@@ -200,6 +252,10 @@ div.second:hover .nav__catalog-list-second {
 .nav__search.visible {
     transition-duration: 500ms;
 
+    &:hover {
+        filter: none;
+    }
+
     img {
         visibility: hidden;
         opacity: 0;
@@ -222,6 +278,8 @@ div.second:hover .nav__catalog-list-second {
             color: gray;
             font-weight: 400;
         }
+
+
     }
 
 
@@ -229,9 +287,7 @@ div.second:hover .nav__catalog-list-second {
 
 /* PROMO SECTION */
 .promo {
-
-
-
+    padding-bottom: 100px;
 
     &__catalog {
         font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -240,16 +296,18 @@ div.second:hover .nav__catalog-list-second {
     }
 
     &__slider {
+        min-width: 0;
         display: flex;
         flex-direction: column;
-        background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_img.png') no-repeat 50% 50%;
-        width: 1108px;
+        background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%);
+        width: 1100px;
         border-right: 1px solid white;
         height: 540px;
+        position: relative;
 
         &:hover {
 
-            background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url('../img/promo_img.png') no-repeat 50% 50%;
+            background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%);
 
         }
 
@@ -273,16 +331,28 @@ div.second:hover .nav__catalog-list-second {
                 background-color: #faa052;
             }
         }
+
+        &-item {
+            position: relative;
+            width: 1100px !important;
+
+            &-title {
+                left: 250px;
+                position: absolute;
+                top: 236px;
+                margin: 0 auto 0 auto;
+                font-size: 48px;
+                line-height: 1.2;
+                font-weight: 700;
+                max-width: 50%;
+                color: #ffffff;
+            }
+        }
     }
 
-    &__slider-title {
-        margin: 260px auto 0 auto;
-        font-size: 48px;
-        line-height: 1.2;
-        font-weight: 700;
-        max-width: 50%;
-        color: #ffffff;
-    }
+
+
+
 
     &__catalog-item {
         width: 280px;
@@ -397,7 +467,7 @@ div.second:hover .nav__catalog-list-second {
             }
 
             &:last-child {
-                width: 271px;
+                width: 271цpx;
                 border-right: none;
             }
 
@@ -425,5 +495,46 @@ div.second:hover .nav__catalog-list-second {
     }
 
 
+
+}
+
+/* SLICK SLIDER */
+.slick {
+    position: relative;
+
+    &-track {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-list {
+        overflow: hidden;
+    }
+
+    &-arrow {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 3px solid #5b523a;
+        border-radius: 50%;
+        top: 231px;
+        z-index: 100;
+        font-size: 0;
+        background-color: #d6d6d7;
+
+        &.slick-prev {
+            left: 53px;
+            background: url('../img/icons/arrow_left.png') no-repeat 50% 50%;
+            background-color: #d6d6d7;
+
+        }
+
+        &.slick-next {
+            right: 60px;
+            background: url('../img/icons/arrow_right.png') no-repeat 50% 50%;
+            background-color: #d6d6d7;
+
+        }
+    }
 
 }

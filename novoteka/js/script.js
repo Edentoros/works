@@ -25,3 +25,11 @@ search.addEventListener('click', () => {
 
     }
 )
+
+$(document).ready(function () {
+    $('.promo__slider').slick({
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500
+    });
+});
