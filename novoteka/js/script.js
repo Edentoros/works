@@ -1,6 +1,34 @@
 const search = document.querySelector('.nav__search')
 const navbar = document.querySelector('.nav')
 const searchBar = document.querySelector('.nav__search-input')
+const radioButtonsOne = document.querySelectorAll('.input-one')
+const radioButtonsTwo = document.querySelectorAll('.input-two')
+
+
+radioButtonsOne.forEach(button => {
+
+    button.addEventListener('click', function () {
+
+        for (i = 0; i <= radioButtonsOne.length; i++) {
+
+            this.closest('label').classList.add('active');
+            radioButtonsOne[i].closest('label').classList.remove('active');
+        }
+    });
+});
+radioButtonsTwo.forEach(button => {
+
+    button.addEventListener('click', function () {
+
+        for (i = 0; i <= radioButtonsTwo.length; i++) {
+
+            this.closest('label').classList.add('active');
+            radioButtonsTwo[i].closest('label').classList.remove('active');
+        }
+    });
+});
+
+
 
 
 search.addEventListener('click', () => {

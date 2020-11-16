@@ -5,14 +5,15 @@
 @font-face {
     font-family: 'Clear Sans';
     font-weight: 400;
-    src: url('clearsansfont/ClearSans-Light.eot'), url('clearsansfont/ClearSans-Light.ttf'), url('clearsansfont/ClearSans-Light.woff');
+    src: url('fonts/clear sans/ClearSans-Light.eot'), url('fonts/clear sans/ClearSans-Light.ttf'), url('fonts/clear sans/ClearSans-Light.woff');
 }
 
 @font-face {
     font-family: 'Clear Sans';
     font-weight: 700;
-    src: url('./clearsansfont/ClearSans-Bold.eot'), url('./clearsansfont/ClearSans-Bold.ttf'), url('./clearsansfont/ClearSans-Bold.woff');
+    src: url('fonts/clear sans/ClearSans-Bold.eot'), url('fonts/clear sans/ClearSans-Bold.ttf'), url('fonts/clear sans/ClearSans-Bold.woff');
 }
+
 
 /* Основые стили */
 a {
@@ -288,7 +289,7 @@ div.second:hover .nav__catalog-list-second {
 
 /* PROMO SECTION */
 .promo {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 
     &__catalog {
         font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -343,8 +344,13 @@ div.second:hover .nav__catalog-list-second {
                 font-size: 48px;
                 line-height: 1.2;
                 font-weight: 700;
+
                 max-width: 50%;
                 color: #ffffff;
+
+                &::first-letter {
+                    font-size: 48px;
+                }
             }
 
             &:hover {
@@ -509,7 +515,7 @@ div.second:hover .nav__catalog-list-second {
 
 }
 
-/* SLICK SLIDER */
+/* SLICK SLIDER PROMO */
 .slick {
     position: relative;
 
@@ -548,4 +554,323 @@ div.second:hover .nav__catalog-list-second {
         }
     }
 
+}
+
+/* OFFER SECTION */
+.offer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-bottom: 75px;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        max-width: 710px;
+        justify-content: space-between;
+
+        &-item {
+
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #000;
+            position: relative;
+            transition-duration: 200ms;
+
+
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                width: 0px;
+                height: 2px;
+                margin: 5px 0 0;
+                transition: $animate;
+                transition-duration: 0.45s;
+                opacity: 0;
+                background-color: #ef7f1a;
+
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: #ef7f1a;
+
+                &:before {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        padding-top: 33px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+
+
+
+        &-item {
+
+
+
+
+
+
+            max-width: 400px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &-pic {
+                width: 400px;
+                position: relative;
+                z-index: 2;
+
+
+            }
+
+            &-text {
+                margin-top: 20px;
+            }
+
+            &-lable {
+                position: absolute;
+                top: 51px;
+                z-index: 3;
+                left: 27px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                    margin-top: 20px;
+                    font-family: 'Clear Sans';
+                    font-size: 14px;
+                    line-height: 0.4;
+                    font-weight: 700;
+                    letter-spacing: -0.05em;
+                    color: #ffffff;
+                    width: 46px;
+                    height: 18px;
+                    background-color: #000000;
+                    border-radius: 4px;
+                    padding: 5px 10px;
+                }
+
+                &:hover {
+                    cursor: initial;
+                }
+            }
+
+            &-title {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                font-size: 24px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 18px;
+            }
+
+            &-description {
+                font-family: 'Clear Sans';
+                max-width: 395px;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #000000;
+                margin-bottom: 15px;
+            }
+
+            &-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &-size {
+                label {
+                    display: block;
+                    font-family: 'Clear Sans';
+                    font-size: 16px;
+                    font-weight: 700;
+                    width: 46px;
+                    height: 18px;
+                    border-radius: 4px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-right: 4px;
+
+                }
+
+                span {
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    font-size: 18px;
+
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+
+                &-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            &-price {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                span {
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #000000;
+                    margin-right: 18px;
+                }
+
+
+
+                a {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* RADIO INPUT */
+label.size-item {
+    display: block;
+    color: #bababa;
+    border: 1px solid #bababa;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.active {
+        color: #ef7f1a;
+        border: 1px solid #ef7f1a;
+    }
+
+    input {
+        display: block;
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+/* OLD PRICE */
+span.offer__menu-item-price-old {
+    position: absolute;
+    font-size: 24px;
+    top: -15px;
+    font-weight: 400;
+    left: 3px;
+    color: #bbbbbb;
+    text-decoration: line-through;
+}
+
+/* CARD HOVER */
+.hidden {
+
+    top: -10px;
+    transition-duration: 300ms;
+    display: none;
+
+    &-table {
+        visibility: hidden;
+        z-index: -10;
+        opacity: 0;
+
+    }
+
+    &-link {
+
+        visibility: hidden;
+        z-index: -10;
+        opacity: 0;
+    }
+}
+
+.offer__menu-item:hover .hidden {
+
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    left: -10px;
+    z-index: 3;
+    width: 420px;
+    height: 705px;
+    display: block;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
+
+    &-table {
+        visibility: visible;
+        opacity: 1;
+        z-index: 3;
+        margin-left: 10px;
+        margin-top: 188px;
+        border: 1px solid #fff;
+        width: 400px;
+
+
+        table {
+            border-collapse: collapse;
+
+            tr {
+
+                border-collapse: collapse;
+
+                td {
+                    width: 200px;
+                    border-collapse: collapse;
+
+                    border: 1px solid #ffffff;
+                    font-family: 'Clear Sans';
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+
+                td:nth-child(2) {
+
+                    color: #ffffff;
+                    text-align: right;
+                    padding: 12px 16px 14px 0;
+                }
+
+                td:first-child {
+                    color: #acacac;
+                    padding: 12px 0 12px 12px;
+                }
+            }
+
+        }
+
+    }
+
+    &-link {
+        visibility: visible;
+        opacity: 1;
+        z-index: 3;
+        font-family: 'Clear Sans';
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-decoration: underline;
+        color: #ef7f1a;
+        width: 37%;
+        margin: 90px auto 0 auto;
+    }
 }

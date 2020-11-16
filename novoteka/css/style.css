@@ -5,13 +5,13 @@
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 400;
-  src: url("clearsansfont/ClearSans-Light.eot"), url("clearsansfont/ClearSans-Light.ttf"), url("clearsansfont/ClearSans-Light.woff");
+  src: url("fonts/clear sans/ClearSans-Light.eot"), url("fonts/clear sans/ClearSans-Light.ttf"), url("fonts/clear sans/ClearSans-Light.woff");
 }
 
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 700;
-  src: url("./clearsansfont/ClearSans-Bold.eot"), url("./clearsansfont/ClearSans-Bold.ttf"), url("./clearsansfont/ClearSans-Bold.woff");
+  src: url("fonts/clear sans/ClearSans-Bold.eot"), url("fonts/clear sans/ClearSans-Bold.ttf"), url("fonts/clear sans/ClearSans-Bold.woff");
 }
 
 /* Основые стили */
@@ -323,7 +323,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
 
 /* PROMO SECTION */
 .promo {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .promo__catalog {
@@ -389,6 +389,10 @@ div.second:hover .nav__catalog-list-second-item:hover {
   font-weight: 700;
   max-width: 50%;
   color: #ffffff;
+}
+
+.promo__slider-item-title::first-letter {
+  font-size: 48px;
 }
 
 .promo__slider-item:hover {
@@ -550,7 +554,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* SLICK SLIDER */
+/* SLICK SLIDER PROMO */
 .slick {
   position: relative;
 }
@@ -591,5 +595,342 @@ div.second:hover .nav__catalog-list-second-item:hover {
   right: 60px;
   background: url("../img/icons/arrow_right.png") no-repeat 50% 50%;
   background-color: #d6d6d7;
+}
+
+/* OFFER SECTION */
+.offer {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding-bottom: 75px;
+}
+
+.offer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 710px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__title-item {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.offer__title-item:before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.45s;
+          transition-duration: 0.45s;
+  opacity: 0;
+  background-color: #ef7f1a;
+}
+
+.offer__title-item:hover {
+  cursor: pointer;
+  color: #ef7f1a;
+}
+
+.offer__title-item:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.offer__menu {
+  padding-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.offer__menu-item {
+  max-width: 400px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.offer__menu-item-pic {
+  width: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+.offer__menu-item-text {
+  margin-top: 20px;
+}
+
+.offer__menu-item-lable {
+  position: absolute;
+  top: 51px;
+  z-index: 3;
+  left: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer__menu-item-lable span {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Clear Sans';
+  font-size: 14px;
+  line-height: 0.4;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  width: 46px;
+  height: 18px;
+  background-color: #000000;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.offer__menu-item-lable:hover {
+  cursor: initial;
+}
+
+.offer__menu-item-title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.offer__menu-item-description {
+  font-family: 'Clear Sans';
+  max-width: 395px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.offer__menu-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__menu-item-size label {
+  display: block;
+  font-family: 'Clear Sans';
+  font-size: 16px;
+  font-weight: 700;
+  width: 46px;
+  height: 18px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 4px;
+}
+
+.offer__menu-item-size span {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.offer__menu-item-size-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.offer__menu-item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.offer__menu-item-price span {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin-right: 18px;
+}
+
+.offer__menu-item-price a {
+  margin-right: 30px;
+}
+
+/* RADIO INPUT */
+label.size-item {
+  display: block;
+  color: #bababa;
+  border: 1px solid #bababa;
+}
+
+label.size-item:hover {
+  cursor: pointer;
+}
+
+label.size-item.active {
+  color: #ef7f1a;
+  border: 1px solid #ef7f1a;
+}
+
+label.size-item input {
+  display: block;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* OLD PRICE */
+span.offer__menu-item-price-old {
+  position: absolute;
+  font-size: 24px;
+  top: -15px;
+  font-weight: 400;
+  left: 3px;
+  color: #bbbbbb;
+  text-decoration: line-through;
+}
+
+/* CARD HOVER */
+.hidden {
+  top: -10px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  display: none;
+}
+
+.hidden-table {
+  visibility: hidden;
+  z-index: -10;
+  opacity: 0;
+}
+
+.hidden-link {
+  visibility: hidden;
+  z-index: -10;
+  opacity: 0;
+}
+
+.offer__menu-item:hover .hidden {
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+  left: -10px;
+  z-index: 3;
+  width: 420px;
+  height: 705px;
+  display: block;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
+}
+
+.offer__menu-item:hover .hidden-table {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+  margin-left: 10px;
+  margin-top: 188px;
+  border: 1px solid #fff;
+  width: 400px;
+}
+
+.offer__menu-item:hover .hidden-table table {
+  border-collapse: collapse;
+}
+
+.offer__menu-item:hover .hidden-table table tr {
+  border-collapse: collapse;
+}
+
+.offer__menu-item:hover .hidden-table table tr td {
+  width: 200px;
+  border-collapse: collapse;
+  border: 1px solid #ffffff;
+  font-family: 'Clear Sans';
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.offer__menu-item:hover .hidden-table table tr td:nth-child(2) {
+  color: #ffffff;
+  text-align: right;
+  padding: 12px 16px 14px 0;
+}
+
+.offer__menu-item:hover .hidden-table table tr td:first-child {
+  color: #acacac;
+  padding: 12px 0 12px 12px;
+}
+
+.offer__menu-item:hover .hidden-link {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+  font-family: 'Clear Sans';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ef7f1a;
+  width: 37%;
+  margin: 90px auto 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
