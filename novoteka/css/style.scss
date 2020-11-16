@@ -396,6 +396,7 @@ div.second:hover .nav__catalog-list-second {
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_1.png') no-repeat 50% 50%;
             position: relative;
             width: 279px;
+            background-size: cover;
 
             .promo__catalog-item-title {
                 left: 34%;
@@ -407,6 +408,7 @@ div.second:hover .nav__catalog-list-second {
 
             &:hover {
                 background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url('../img/promo_1.png') no-repeat 50% 50%;
+                background-size: cover;
             }
 
         }
@@ -415,6 +417,7 @@ div.second:hover .nav__catalog-list-second {
             position: relative;
             width: 280px;
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_2.png') no-repeat 50% 50%;
+            background-size: cover;
 
             .promo__catalog-item-title {
                 left: 25%;
@@ -426,6 +429,7 @@ div.second:hover .nav__catalog-list-second {
 
             &:hover {
                 background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url('../img/promo_2.png') no-repeat 50% 50%;
+                background-size: cover;
             }
         }
     }

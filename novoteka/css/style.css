@@ -435,6 +435,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url("../img/promo_1.png") no-repeat 50% 50%;
   position: relative;
   width: 279px;
+  background-size: cover;
 }
 
 .promo__catalog-item:nth-of-type(2) .promo__catalog-item-title {
@@ -448,6 +449,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
 .promo__catalog-item:nth-of-type(2):hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(40%, rgba(0, 0, 0, 0.001))), url("../img/promo_1.png") no-repeat 50% 50%;
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url("../img/promo_1.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .promo__catalog-item:nth-of-type(3) {
@@ -455,6 +457,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
   width: 280px;
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0.07))), url("../img/promo_2.png") no-repeat 50% 50%;
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url("../img/promo_2.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .promo__catalog-item:nth-of-type(3) .promo__catalog-item-title {
@@ -468,6 +471,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
 .promo__catalog-item:nth-of-type(3):hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(40%, rgba(0, 0, 0, 0.001))), url("../img/promo_2.png") no-repeat 50% 50%;
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url("../img/promo_2.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .promo__categories {
