@@ -455,6 +455,7 @@ div.second:hover .nav__catalog-list-second {
             display: flex;
             flex-direction: column;
             height: 100px;
+            justify-content: space-between;
             border-right: 1px solid white;
             width: 280px;
             align-items: center;
@@ -485,7 +486,7 @@ div.second:hover .nav__catalog-list-second {
             }
 
             &:last-child {
-                width: 271цpx;
+                width: 280px;
                 border-right: none;
             }
 
@@ -618,10 +619,11 @@ div.second:hover .nav__catalog-list-second {
 
         &-item {
             max-width: 400px;
-            margin-right: 19px;
+
             display: flex;
             flex-direction: column;
             position: relative;
+            width: 400px !important;
 
             &-pic {
                 width: 400px;
@@ -757,6 +759,8 @@ label.size-item {
 
     &:hover {
         cursor: pointer;
+        color: #ef7d1a91;
+        border: 1px solid #ef7d1a91;
     }
 
     &.active {
@@ -903,6 +907,7 @@ span.offer__menu-item-price-old {
         &-track {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
 
         &-list {
