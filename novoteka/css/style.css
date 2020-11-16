@@ -745,7 +745,12 @@ div.second:hover .nav__catalog-list-second-item:hover {
   margin-bottom: 15px;
 }
 
+.offer__menu-item-text {
+  z-index: 4;
+}
+
 .offer__menu-item-info {
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,6 +873,18 @@ span.offer__menu-item-price-old {
   visibility: hidden;
   z-index: -10;
   opacity: 0;
+}
+
+.offer__menu-item:hover h4 {
+  color: #fff;
+}
+
+.offer__menu-item:hover p {
+  color: #fff;
+}
+
+.offer__menu-item:hover span {
+  color: #fff;
 }
 
 .offer__menu-item:hover .hidden {

@@ -687,7 +687,12 @@ div.second:hover .nav__catalog-list-second {
                 margin-bottom: 15px;
             }
 
+            &-text {
+                z-index: 4;
+            }
+
             &-info {
+                z-index: 4;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -804,73 +809,87 @@ span.offer__menu-item-price-old {
     }
 }
 
-.offer__menu-item:hover .hidden {
+.offer__menu-item:hover {
+    h4 {
+        color: #fff;
+    }
 
-    visibility: visible;
-    position: absolute;
-    opacity: 1;
-    left: -10px;
-    z-index: 3;
-    width: 420px;
-    height: 705px;
-    display: block;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
+    p {
+        color: #fff;
+    }
 
-    &-table {
+    span {
+        color: #fff;
+    }
+
+    .hidden {
+
         visibility: visible;
+        position: absolute;
         opacity: 1;
+        left: -10px;
         z-index: 3;
-        margin-left: 10px;
-        margin-top: 188px;
-        border: 1px solid #fff;
-        width: 400px;
+        width: 420px;
+        height: 705px;
+        display: block;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
+
+        &-table {
+            visibility: visible;
+            opacity: 1;
+            z-index: 3;
+            margin-left: 10px;
+            margin-top: 188px;
+            border: 1px solid #fff;
+            width: 400px;
 
 
-        table {
-            border-collapse: collapse;
-
-            tr {
-
+            table {
                 border-collapse: collapse;
 
-                td {
-                    width: 200px;
+                tr {
+
                     border-collapse: collapse;
 
-                    border: 1px solid #ffffff;
-                    font-family: 'Clear Sans';
-                    font-size: 16px;
-                    font-weight: 300;
+                    td {
+                        width: 200px;
+                        border-collapse: collapse;
+
+                        border: 1px solid #ffffff;
+                        font-family: 'Clear Sans';
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+
+                    td:nth-child(2) {
+
+                        color: #ffffff;
+                        text-align: right;
+                        padding: 12px 16px 14px 0;
+                    }
+
+                    td:first-child {
+                        color: #acacac;
+                        padding: 12px 0 12px 12px;
+                    }
                 }
 
-                td:nth-child(2) {
-
-                    color: #ffffff;
-                    text-align: right;
-                    padding: 12px 16px 14px 0;
-                }
-
-                td:first-child {
-                    color: #acacac;
-                    padding: 12px 0 12px 12px;
-                }
             }
 
         }
 
-    }
-
-    &-link {
-        visibility: visible;
-        opacity: 1;
-        z-index: 3;
-        font-family: 'Clear Sans';
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 700;
-        text-decoration: underline;
-        color: #ef7f1a;
-        width: 37%;
-        margin: 90px auto 0 auto;
+        &-link {
+            visibility: visible;
+            opacity: 1;
+            z-index: 3;
+            font-family: 'Clear Sans';
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-decoration: underline;
+            color: #ef7f1a;
+            width: 37%;
+            margin: 90px auto 0 auto;
+        }
     }
 }
