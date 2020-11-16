@@ -301,7 +301,7 @@ div.second:hover .nav__catalog-list-second {
         display: flex;
         flex-direction: column;
 
-        width: 1100px;
+        width: 1106px;
         border-right: 1px solid white;
 
         position: relative;
@@ -331,7 +331,7 @@ div.second:hover .nav__catalog-list-second {
 
         &-item {
             position: relative;
-            width: 1100px !important;
+            width: 1106px !important;
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_img.png');
             height: 540px;
 
@@ -395,6 +395,7 @@ div.second:hover .nav__catalog-list-second {
         &:nth-of-type(2) {
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_1.png') no-repeat 50% 50%;
             position: relative;
+            width: 279px;
 
             .promo__catalog-item-title {
                 left: 34%;
@@ -412,7 +413,7 @@ div.second:hover .nav__catalog-list-second {
 
         &:nth-of-type(3) {
             position: relative;
-            width: 270px;
+            width: 280px;
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_2.png') no-repeat 50% 50%;
 
             .promo__catalog-item-title {
