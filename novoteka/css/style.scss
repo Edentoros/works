@@ -199,7 +199,8 @@ $animate: all 0.2s ease-in-out;
         flex-direction: row;
         align-items: center;
         margin-right: 55px;
-        transition-duration: 300ms;
+
+        transition: filter 0s;
         position: relative;
 
         &-input {
@@ -516,44 +517,46 @@ div.second:hover .nav__catalog-list-second {
 }
 
 /* SLICK SLIDER PROMO */
-.slick {
-    position: relative;
+.promo {
+    .slick {
+        position: relative;
 
-    &-track {
-        display: flex;
-        flex-direction: row;
-    }
-
-    &-list {
-        overflow: hidden;
-    }
-
-    &-arrow {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border: 3px solid #5b523a;
-        border-radius: 50%;
-        top: 231px;
-        z-index: 100;
-        font-size: 0;
-        background-color: #d6d6d7;
-
-        &.slick-prev {
-            left: 53px;
-            background: url('../img/icons/arrow_left.png') no-repeat 50% 50%;
-            background-color: #d6d6d7;
-
+        &-track {
+            display: flex;
+            flex-direction: row;
         }
 
-        &.slick-next {
-            right: 60px;
-            background: url('../img/icons/arrow_right.png') no-repeat 50% 50%;
+        &-list {
+            overflow: hidden;
+        }
+
+        &-arrow {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #5b523a;
+            border-radius: 50%;
+            top: 231px;
+            z-index: 100;
+            font-size: 0;
             background-color: #d6d6d7;
 
-        }
-    }
+            &.slick-prev {
+                left: 53px;
+                background: url('../img/icons/arrow_left.png') no-repeat 50% 50%;
+                background-color: #d6d6d7;
 
+            }
+
+            &.slick-next {
+                right: 60px;
+                background: url('../img/icons/arrow_right.png') no-repeat 50% 50%;
+                background-color: #d6d6d7;
+
+            }
+        }
+
+    }
 }
 
 /* OFFER SECTION */
@@ -605,23 +608,17 @@ div.second:hover .nav__catalog-list-second {
     }
 
     &__menu {
+        min-width: 0;
         padding-top: 33px;
         display: flex;
         flex-direction: row;
-        width: 100%;
         flex-wrap: nowrap;
-
-
+        justify-content: space-between;
+        position: relative;
 
         &-item {
-
-
-
-
-
-
             max-width: 400px;
-            margin-right: 20px;
+            margin-right: 19px;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -894,6 +891,50 @@ span.offer__menu-item-price-old {
             color: #ef7f1a;
             width: 37%;
             margin: 90px auto 0 auto;
+        }
+    }
+}
+
+/* SLIDER OFFER MENU */
+.offer__menu {
+    .slick {
+        position: relative;
+
+        &-track {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &-list {
+            overflow: hidden;
+        }
+
+        &-arrow {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+
+            top: -43px;
+            z-index: 100;
+            font-size: 0;
+            transition-duration: 200ms;
+
+
+            &.slick-prev {
+                right: 110px;
+                background: url('../img/icons/arrow_left.png') no-repeat 50% 50%;
+
+            }
+
+            &.slick-next {
+                right: 0;
+                background: url('../img/icons/arrow_right.png') no-repeat 50% 50%;
+
+            }
+
+            &:hover {
+                filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
+            }
         }
     }
 }

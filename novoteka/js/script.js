@@ -57,7 +57,18 @@ search.addEventListener('click', () => {
 $(document).ready(function () {
     $('.promo__slider').slick({
         dots: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 1500
+    });
+});
+$(document).ready(function () {
+    $('.offer__menu').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+
+
     });
 });
