@@ -451,7 +451,7 @@ div.second:hover .nav__catalog-list-second {
         border-top: 1px solid white;
 
         &-item {
-            padding-top: 10px;
+
             display: flex;
             flex-direction: column;
             height: 100px;
@@ -473,13 +473,9 @@ div.second:hover .nav__catalog-list-second {
                 width: 277px;
             }
 
-            &:nth-child(2) {
-                width: 277px;
-            }
 
-            &:nth-child(2) {
-                width: 277px;
-            }
+
+
 
             &:nth-child(5) {
                 width: 281px;
@@ -491,11 +487,14 @@ div.second:hover .nav__catalog-list-second {
             }
 
 
+            img {
+                margin-top: 18px;
+            }
 
             span {
                 font-family: 'Yanone Kaffeesatz', sans-serif;
 
-                margin-top: 13px;
+                margin-bottom: 13px;
                 display: block;
                 font-size: 24px;
                 line-height: 1.2;

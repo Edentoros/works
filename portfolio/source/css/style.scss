@@ -191,8 +191,7 @@ html {
 }
 
 @keyframes letter {
-  0% {
-  }
+  0% {}
 
   100% {
     transform: rotate(360deg);
@@ -357,6 +356,7 @@ html {
     margin: 40px 0 0 60px;
     position: relative;
     padding-bottom: 150px;
+
     &::before {
       position: absolute;
       content: url(../../media/img/icons/works.png);
@@ -379,14 +379,13 @@ html {
     bottom: 0;
     padding: 10px 0;
     transition-duration: 200ms;
-    background: radial-gradient(
-      circle,
-      rgba(94, 94, 94, 0.7) 23%,
-      rgba(94, 94, 94, 0.7) 59%
-    );
+    background: radial-gradient(circle,
+        rgba(94, 94, 94, 0.7) 23%,
+        rgba(94, 94, 94, 0.7) 59%);
     width: 100%;
     left: 0;
   }
+
   &__menu-item {
     height: 200px;
     width: 250px;
@@ -409,21 +408,21 @@ html {
     opacity: 0;
     margin: 0 auto;
     transition-duration: 200ms;
+
     span {
       display: inline-block;
       width: 100%;
       margin-bottom: 10px;
     }
   }
+
   &__menu-item-wrap:hover {
     transform: scale(1.05);
 
     .works__menu-item {
-      background: radial-gradient(
-        circle,
-        rgba(34, 34, 34, 0.5) 23%,
-        rgba(34, 34, 34, 0.5) 59%
-      );
+      background: radial-gradient(circle,
+          rgba(34, 34, 34, 0.5) 23%,
+          rgba(34, 34, 34, 0.5) 59%);
     }
 
     .works__menu-item-description {
@@ -449,18 +448,22 @@ html {
     background: url(../../media/img/works-bg/marathon.png);
     background-size: cover;
   }
+
   &__menu-item-wrap:nth-child(3) {
-    background: url(../../media/img/works-bg/casino.png) 50% 50% no-repeat;
+    background: url(../../media/img/works-bg/wtfgamers.png) 50% 50% no-repeat;
     background-size: cover;
   }
+
   &__menu-item-wrap:nth-child(4) {
     background: url(../../media/img/works-bg/webdev.png) 50% 50% no-repeat;
     background-size: cover;
   }
+
   &__menu-item-wrap:nth-child(5) {
     background: url(../../media/img/works-bg/clinic.png) 50% 50% no-repeat;
     background-size: cover;
   }
+
   &__menu-item-wrap:nth-child(6) {
     background: url(../../media/img/works-bg/shelter.png) 50% 50% no-repeat;
     background-size: cover;
@@ -479,6 +482,7 @@ html {
     margin: 40px 0 0 200px;
     color: #f7f54e;
     position: relative;
+
     span {
       display: inline-block;
       width: 100%;
@@ -652,79 +656,99 @@ ul.nav__list li:hover a {
     font-size: 28px;
     margin-left: 70px;
     margin-left: 30px;
+
     &::before {
       left: -50px;
     }
   }
+
   .nav {
     font-size: 125px;
   }
+
   .skills__description {
     font-size: 61px;
     margin-left: 90px;
     line-height: 75px;
   }
+
   .about__pic img {
     margin-top: 75px;
     max-width: 250px;
   }
+
   .title {
     font-size: 90px;
   }
+
   .works__menu {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 786px) {
   .navbar {
     display: none;
   }
+
   .nav__list {
     font-size: 100px;
   }
+
   .main-screen {
     &__title {
       margin-left: 20px;
       margin-top: 20px;
       font-size: 45px;
     }
+
     &__heading {
       margin-left: 20px;
       padding-bottom: 50px;
       font-size: 40px;
     }
+
     &__logo {
       margin-left: 40px;
+
       &-1 {
         max-width: 200px;
         max-height: 200px;
       }
+
       &-2 {
         max-width: 200px;
         max-height: 200px;
       }
     }
   }
+
   .title {
     margin-left: 20px;
     text-align: center;
   }
+
   .about__description {
     line-height: 34px;
   }
+
   .container {
     padding: 0 20px;
   }
+
   .skills {
     &__description {
       margin-left: 30px;
       font-size: 67px;
       line-height: 70px;
+
       &::before {
         left: -45px;
       }
+
       span {
         position: relative;
+
         &::before {
           content: "";
           background-color: #000;
@@ -735,32 +759,36 @@ ul.nav__list li:hover a {
           top: 25px;
           left: -35px;
         }
+
         &:first-child::before {
           opacity: 0;
         }
       }
     }
   }
+
   .works {
     &__menu {
       padding-bottom: 75px;
       margin-left: 0;
+
       &::before {
         left: -45px;
         display: none;
       }
     }
+
     &__menu-item {
-      background: radial-gradient(
-        circle,
-        rgba(34, 34, 34, 0.5) 23%,
-        rgba(34, 34, 34, 0.5) 59%
-      );
+      background: radial-gradient(circle,
+          rgba(34, 34, 34, 0.5) 23%,
+          rgba(34, 34, 34, 0.5) 59%);
+
       &-title {
         padding: 5px 0;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
           1px 1px 0 #000;
       }
+
       &-description {
         visibility: visible;
         opacity: 1;
@@ -768,74 +796,91 @@ ul.nav__list li:hover a {
       }
     }
   }
+
   .contact {
     &__social {
       padding-bottom: 40px;
     }
+
     &__text {
       margin-left: 40px;
       line-height: 70px;
     }
+
     &__button {
       margin-bottom: 50px;
     }
   }
+
   .about {
     &__description {
       line-height: 34px;
       margin-top: 20px;
+
       &::before {
         display: none;
       }
     }
+
     &__content {
       flex-direction: column;
       align-items: center;
     }
+
     &__pic img {
       margin-top: 0;
     }
   }
 }
+
 @media screen and (max-width: 570px) {
   .title {
     font-size: 75px;
     margin-left: 0;
     text-align: center;
   }
+
   .menu {
     width: 40px;
     height: 40px;
     right: 10px;
     top: 20px;
+
     span {
       margin-bottom: 4px;
       width: 23px;
     }
+
     &.open span {
       &:nth-child(1) {
         top: 6px;
         right: 1px;
       }
+
       &:nth-child(3) {
         top: -6px;
         left: -1px;
       }
     }
   }
+
   .nav__list {
     font-size: 70px;
+
     li {
       margin: 20px auto;
     }
   }
+
   .navbar {
     display: none;
   }
+
   .main-screen {
     &__heading {
       margin-left: 40px;
     }
+
     &__title {
       margin-left: 40px;
     }
@@ -846,6 +891,7 @@ ul.nav__list li:hover a {
       align-items: flex-start;
       margin-left: 60px;
       margin-top: 20px;
+
       &-1 {
         margin-right: 0;
         margin-bottom: 10px;
@@ -860,66 +906,82 @@ ul.nav__list li:hover a {
       max-width: 390px;
     }
   }
+
   .skills {
     &__description {
       font-size: 38px;
       margin-left: 20px;
       line-height: 60px;
+
       &::before {
         top: 4px;
         left: -35px;
       }
+
       span {
         &::before {
           left: -22px !important;
           top: 20px;
         }
+
         &::before:first-child {
           display: block;
         }
       }
     }
   }
+
   .contact {
     &__text {
       margin-left: 0;
+
       &::before {
         display: none;
       }
     }
   }
+
   .arrow {
     right: 15px;
   }
 }
+
 @media screen and (max-width: 470px) {
   .container {
     padding: 0 10px;
   }
+
   .title {
     text-align: center;
     font-size: 50px;
   }
+
   .nav__list {
     font-size: 50px;
   }
+
   .main-screen {
     margin-left: 0;
+
     &__logo {
       margin-left: 30px;
     }
+
     &__title {
       margin-left: 10px;
     }
+
     &__heading {
       margin-left: 10px;
       padding-bottom: 35px;
     }
   }
+
   .about {
     &__content {
       padding-bottom: 35px;
     }
+
     &__description {
       line-height: 25px !important;
       margin-left: 8%;
@@ -930,41 +992,49 @@ ul.nav__list li:hover a {
       }
     }
   }
+
   .skills {
     &__description {
       margin-top: 25px;
       font-size: 35px;
       line-height: 50px;
+
       &::before {
         display: none;
       }
+
       span {
         &:first-child::before {
           opacity: 1;
         }
+
         &::before {
           top: 15px;
         }
       }
     }
   }
+
   .works {
     &__menu {
       padding-bottom: 35px;
     }
   }
+
   .contact {
     &__text {
       font-size: 40px;
       margin-top: 30px;
       margin-left: 50px;
       line-height: 45px;
+
       &::before {
         display: block;
         top: 20px;
         left: -50px;
       }
     }
+
     &__button {
       margin-top: 40px;
     }

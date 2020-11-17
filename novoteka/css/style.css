@@ -497,7 +497,6 @@ div.second:hover .nav__catalog-list-second-item:hover {
 }
 
 .promo__categories-item {
-  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,14 +526,6 @@ div.second:hover .nav__catalog-list-second-item:hover {
   width: 277px;
 }
 
-.promo__categories-item:nth-child(2) {
-  width: 277px;
-}
-
-.promo__categories-item:nth-child(2) {
-  width: 277px;
-}
-
 .promo__categories-item:nth-child(5) {
   width: 281px;
 }
@@ -544,9 +535,13 @@ div.second:hover .nav__catalog-list-second-item:hover {
   border-right: none;
 }
 
+.promo__categories-item img {
+  margin-top: 18px;
+}
+
 .promo__categories-item span {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin-top: 13px;
+  margin-bottom: 13px;
   display: block;
   font-size: 24px;
   line-height: 1.2;
