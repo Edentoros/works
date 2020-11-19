@@ -58,8 +58,9 @@ $(document).ready(function () {
     $('.promo__slider').slick({
         dots: false,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1500
+
     });
 });
 $(document).ready(function () {
@@ -68,7 +69,19 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-
+        responsive: [{
+                breakpoint: 1690,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1310,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
 
     });
 });

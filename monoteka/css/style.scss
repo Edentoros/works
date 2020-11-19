@@ -23,13 +23,14 @@ a {
 .container {
     max-width: 1660px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 $animate: all 0.2s ease-in-out;
 
 /* NAVBAR */
 .nav {
-    padding-bottom: 26px;
+    padding-bottom: 20px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 
     &__content {
@@ -37,22 +38,22 @@ $animate: all 0.2s ease-in-out;
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
-        padding-top: 18px;
+        padding-top: 13px;
     }
 
     &__catalog {
+        margin-top: 4px;
         z-index: 500;
-        border: 3px solid #fff;
         display: block;
         font-size: 18px;
         line-height: 1.2;
         font-weight: 400;
         text-transform: uppercase;
         color: #fefefe;
-        width: 160px;
-        height: 46px;
+        width: 155px;
+        height: 40px;
         background-color: #ef7f1a;
-        padding: 12px 0 17px 29px;
+        padding: 12px 0 17px 27px;
         margin-right: 85px;
         position: relative;
         transition-duration: 500ms;
@@ -141,7 +142,7 @@ $animate: all 0.2s ease-in-out;
         }
 
         &:hover {
-            //color: #ef7f1a;
+
 
             &:before {
                 width: 100%;
@@ -176,7 +177,7 @@ $animate: all 0.2s ease-in-out;
             }
 
             &:hover {
-                // color: #ef7f1a;
+
 
                 &:before {
                     width: 100%;
@@ -188,9 +189,8 @@ $animate: all 0.2s ease-in-out;
     }
 
     &__logo {
-        margin: 0 240px;
+        margin: 6px 0 0 0;
         flex-grow: 0.5;
-        margin-top: 5px;
         text-align: center;
     }
 
@@ -323,7 +323,7 @@ div.second:hover .nav__catalog-list-second {
             font-weight: 400;
             text-transform: uppercase;
             border: 3px solid #f2f2f2;
-            margin-top: 50px;
+            margin-top: 33px;
 
 
             &:hover {
@@ -333,20 +333,21 @@ div.second:hover .nav__catalog-list-second {
 
         &-item {
             position: relative;
+
             width: 1106px !important;
             background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_img.png');
             height: 540px;
 
             &-title {
-                left: 250px;
+                left: 254px;
                 position: absolute;
-                top: 236px;
+                top: 268px;
                 margin: 0 auto 0 auto;
                 font-size: 48px;
                 line-height: 1.2;
                 font-weight: 700;
 
-                max-width: 50%;
+                max-width: 60%;
                 color: #ffffff;
 
                 &::first-letter {
@@ -381,7 +382,7 @@ div.second:hover .nav__catalog-list-second {
             line-height: 1.2;
             font-weight: 700;
             color: #ffffff;
-            bottom: 67px;
+            bottom: 61px;
         }
 
         &-link {
@@ -482,7 +483,7 @@ div.second:hover .nav__catalog-list-second {
             }
 
             &:last-child {
-                width: 280px;
+                width: 282px;
                 border-right: none;
             }
 
@@ -536,20 +537,20 @@ div.second:hover .nav__catalog-list-second {
             height: 50px;
             border: 3px solid #5b523a;
             border-radius: 50%;
-            top: 231px;
+            top: 241px;
             z-index: 100;
             font-size: 0;
             background-color: #d6d6d7;
 
             &.slick-prev {
-                left: 53px;
+                left: 52px;
                 background: url('../img/icons/arrow_left.png') no-repeat 50% 50%;
                 background-color: #d6d6d7;
 
             }
 
             &.slick-next {
-                right: 60px;
+                right: 52px;
                 background: url('../img/icons/arrow_right.png') no-repeat 50% 50%;
                 background-color: #d6d6d7;
 
@@ -567,7 +568,7 @@ div.second:hover .nav__catalog-list-second {
     &__title {
         display: flex;
         flex-direction: row;
-        max-width: 710px;
+        max-width: 708px;
         justify-content: space-between;
 
         &-item {
@@ -609,7 +610,8 @@ div.second:hover .nav__catalog-list-second {
 
     &__menu {
         min-width: 0;
-        padding-top: 33px;
+        padding-top: 30px;
+        margin-left: -4px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -632,15 +634,13 @@ div.second:hover .nav__catalog-list-second {
 
             }
 
-            &-text {
-                margin-top: 20px;
-            }
+
 
             &-lable {
                 position: absolute;
-                top: 51px;
+                top: 50px;
                 z-index: 3;
-                left: 27px;
+                left: 17px;
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
@@ -672,7 +672,7 @@ div.second:hover .nav__catalog-list-second {
                 line-height: 1.2;
                 font-weight: 700;
                 color: #000000;
-                margin-bottom: 18px;
+                margin-bottom: 6px;
             }
 
             &-description {
@@ -682,11 +682,12 @@ div.second:hover .nav__catalog-list-second {
                 line-height: 1.2;
                 font-weight: 300;
                 color: #000000;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
 
             &-text {
                 z-index: 4;
+                margin-top: 22px;
             }
 
             &-info {
@@ -737,13 +738,13 @@ div.second:hover .nav__catalog-list-second {
                     font-size: 36px;
                     font-weight: 700;
                     color: #000000;
-                    margin-right: 18px;
+                    margin-right: 16px;
                 }
 
 
 
                 a {
-                    margin-right: 30px;
+                    margin-right: 22px;
                 }
             }
         }
@@ -938,6 +939,130 @@ span.offer__menu-item-price-old {
 
             &:hover {
                 filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1690px) {
+
+    .promo {
+        &__catalog {
+            margin: 0 auto;
+            max-width: 1385px;
+        }
+
+        &__catalog-item:nth-of-type(3) {
+            display: none;
+        }
+
+        &__categories {
+            margin: 0 auto;
+            max-width: 1384px;
+        }
+    }
+
+    .offer {
+        &__content {
+            margin: 0 auto;
+            max-width: 1240px;
+        }
+
+        &__menu {
+            margin: 0 auto;
+            width: 100%;
+
+            .slick-list {
+                max-width: 1240px;
+                margin: 0 auto;
+            }
+        }
+
+        &__title {
+            margin-left: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .promo {
+        &__catalog-item {
+            display: none;
+        }
+
+        &__slider {
+            margin: 0 auto;
+        }
+
+        &__categories {
+
+            max-width: 1104px;
+        }
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .nav {
+        &__catalog {
+            margin-right: 10px;
+        }
+
+        &__menu-right {
+            margin-right: 0;
+        }
+
+        &__menu {
+            margin-right: 0 !important;
+        }
+
+        &__search {
+            margin-right: 25px;
+        }
+    }
+
+    .offer {
+        &__content {
+            max-width: 1080px;
+        }
+
+        &__title {
+            max-width: 660px;
+        }
+
+        &__menu {
+            width: 85%;
+
+            .slick-list {
+                max-width: 1080px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .promo {
+        &__slider-item-title {
+            left: 170px;
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+
+
+    .offer {
+        &__menu {
+            .slick-arrow.slick-prev {
+                right: 50px;
+            }
+
+            .slick-list {
+                max-width: 900px;
             }
         }
     }
