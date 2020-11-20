@@ -22,7 +22,7 @@ a {
 .container {
   max-width: 1660px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 /* NAVBAR */
@@ -45,6 +45,12 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-top: 13px;
+}
+
+.nav__burger {
+  position: relative;
+  margin-top: 11px;
+  display: none;
 }
 
 .nav__catalog {
@@ -376,9 +382,10 @@ div.second:hover .nav__catalog-list-second-item:hover {
 .promo__slider-item {
   position: relative;
   width: 1106px !important;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0.07))), url("../img/promo_img.png");
-  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url("../img/promo_img.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0.07))), url("../img/promo_img.png") no-repeat;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url("../img/promo_img.png") no-repeat;
   height: 540px;
+  background-position: center;
 }
 
 .promo__slider-item-title {
@@ -400,6 +407,7 @@ div.second:hover .nav__catalog-list-second-item:hover {
 .promo__slider-item:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(40%, rgba(0, 0, 0, 0.001))), url("../img/promo_img.png");
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url("../img/promo_img.png");
+  background-position: center;
 }
 
 .promo__catalog-item {
@@ -1005,6 +1013,84 @@ span.offer__menu-item-price-old {
           filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
 }
 
+/* BURGER MENU */
+.burger__button {
+  background-color: #fff;
+  z-index: 100;
+}
+
+.burger__button span {
+  cursor: pointer;
+  height: 2px;
+  width: 33px;
+  margin-bottom: 8px;
+  background-color: #000;
+  position: relative;
+  right: 0;
+  display: block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.burger__button.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  background: #000;
+}
+
+.burger__button.open span:nth-child(2) {
+  opacity: 0;
+  right: 100px;
+  background: #ef7f1a;
+}
+
+.burger__button.open span:nth-child(3) {
+  top: -10px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #000;
+}
+
+.burger__menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  right: 21px;
+  top: 60px;
+  background-color: #fff;
+  z-index: 101;
+  padding: 40px 60px;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+}
+
+.burger__menu-item {
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.burger__menu.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 1690px) {
   .promo__catalog {
     margin: 0 auto;
@@ -1089,6 +1175,24 @@ span.offer__menu-item-price-old {
   }
   .offer__menu .slick-list {
     max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav__menu {
+    display: none;
+  }
+  .nav__menu-right {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+  .nav__search {
+    margin-right: 0;
+  }
+  .offer__menu {
+    width: 91%;
   }
 }
 /*# sourceMappingURL=style.css.map */

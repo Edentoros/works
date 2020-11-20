@@ -3,6 +3,7 @@ const navbar = document.querySelector('.nav')
 const searchBar = document.querySelector('.nav__search-input')
 const radioButtonsOne = document.querySelectorAll('.input-one')
 const radioButtonsTwo = document.querySelectorAll('.input-two')
+const burgerButton = document.querySelector('.burger__button')
 
 
 radioButtonsOne.forEach(button => {
@@ -85,3 +86,9 @@ $(document).ready(function () {
 
     });
 });
+
+burgerButton.addEventListener('click', () => {
+    document.querySelector('.burger__menu').classList.toggle('open');
+    document.querySelector('.burger__menu-item').classList.toggle('open');
+    burgerButton.classList.toggle('open')
+})

@@ -23,7 +23,7 @@ a {
 .container {
     max-width: 1660px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 $animate: all 0.2s ease-in-out;
@@ -39,6 +39,12 @@ $animate: all 0.2s ease-in-out;
         justify-content: space-between;
         align-content: center;
         padding-top: 13px;
+    }
+
+    &__burger {
+        position: relative;
+        margin-top: 11px;
+        display: none;
     }
 
     &__catalog {
@@ -335,8 +341,9 @@ div.second:hover .nav__catalog-list-second {
             position: relative;
 
             width: 1106px !important;
-            background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_img.png');
+            background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.07) 100%), url('../img/promo_img.png') no-repeat;
             height: 540px;
+            background-position: center;
 
             &-title {
                 left: 254px;
@@ -358,6 +365,7 @@ div.second:hover .nav__catalog-list-second {
             &:hover {
 
                 background: linear-gradient(0.0deg, #000000 0%, rgba(0, 0, 0, 0.001) 40%), url('../img/promo_img.png');
+                background-position: center;
 
             }
         }
@@ -944,6 +952,77 @@ span.offer__menu-item-price-old {
     }
 }
 
+/* BURGER MENU */
+.burger__button {
+    background-color: #fff;
+    z-index: 100;
+
+    span {
+        cursor: pointer;
+        height: 2px;
+        width: 33px;
+        margin-bottom: 8px;
+        background-color: #000;
+        position: relative;
+        right: 0;
+        display: block;
+        transform: rotate(0deg);
+        transition: 0.7s ease;
+    }
+}
+
+
+
+.burger__button.open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+    transition: 0.7s ease;
+    background: #000;
+}
+
+.burger__button.open span:nth-child(2) {
+    opacity: 0;
+    right: 100px;
+    background: #ef7f1a;
+}
+
+.burger__button.open span:nth-child(3) {
+    top: -10px;
+    transform: rotate(-135deg);
+    transition: 0.5s ease;
+    background: #000;
+}
+
+.burger__menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 21px;
+    top: 60px;
+    background-color: #fff;
+    z-index: 101;
+    padding: 40px 60px;
+    transition-duration: 800ms;
+
+    &-item {
+
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 20px;
+
+
+    }
+}
+
+.burger__menu.open {
+    display: flex;
+}
+
+
+
 @media screen and (max-width: 1690px) {
 
     .promo {
@@ -1065,5 +1144,31 @@ span.offer__menu-item-price-old {
                 max-width: 900px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav {
+        &__menu {
+            display: none;
+        }
+
+        &__menu-right {
+            display: none;
+
+        }
+
+        &__burger {
+            display: block;
+        }
+
+        &__search {
+            margin-right: 0;
+        }
+    }
+
+
+    .offer__menu {
+        width: 91%;
     }
 }
