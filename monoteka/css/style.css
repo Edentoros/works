@@ -915,6 +915,11 @@ span.offer__menu-item-price-old {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
 }
 
+.offer__menu-item:hover .hidden.block {
+  display: block;
+  height: 410px;
+}
+
 .offer__menu-item:hover .hidden-table {
   visibility: visible;
   opacity: 1;
@@ -1190,7 +1195,7 @@ span.offer__menu-item-price-old {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 980px) {
   .nav__menu {
     display: none;
   }
@@ -1253,6 +1258,9 @@ span.offer__menu-item-price-old {
     top: 210px;
     left: 150px;
   }
+  .promo__categories-item:nth-child(5) img {
+    padding-left: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1297,9 +1305,48 @@ span.offer__menu-item-price-old {
   .offer {
     padding-bottom: 40px;
   }
+  .offer__menu-item-text {
+    position: relative;
+  }
+  .offer__menu-item-link {
+    opacity: 0.7;
+    padding: 5px 5px;
+    top: -45px;
+    right: 0;
+    display: block;
+    text-transform: uppercase;
+    color: #000000;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    font-size: 18px;
+    background-color: #fff;
+    position: absolute;
+  }
+  .offer__menu-item:hover h4,
+  .offer__menu-item:hover p,
+  .offer__menu-item:hover span {
+    color: #000000;
+  }
+  .offer__menu-item:hover .offer__menu-item-lable span {
+    color: #ffffff;
+  }
+  .offer__menu-item:hover .hidden {
+    display: none;
+  }
   .nav__catalog-list-item.second:hover .nav__catalog-list-second-item {
     padding-left: 15px !important;
     width: 125px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .promo__categories {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .promo__categories-item {
+    max-width: 33.33%;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -1354,11 +1401,19 @@ span.offer__menu-item-price-old {
   .promo__categories-item span {
     font-size: 14px;
   }
+  .nav__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .nav__catalog {
-    width: 80px;
+    margin-right: 20px;
+    width: 115px;
+  }
+  .nav__catalog__logo {
+    margin: 0 50px;
   }
   .nav__catalog img {
-    margin-left: 5px;
+    margin-left: 15px;
   }
   .nav__catalog:hover .nav__catalog-list-item.second img {
     -webkit-transform: rotate(-90deg) translateY(5px);
@@ -1372,6 +1427,9 @@ span.offer__menu-item-price-old {
   }
   .promo__slider-item-title {
     top: 95px;
+    left: 25px;
+    max-width: 90%;
+    font-size: 35px;
   }
   .promo__slider .slick-arrow {
     top: 460px;

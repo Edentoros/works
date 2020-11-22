@@ -4,7 +4,27 @@ const searchBar = document.querySelector('.nav__search-input')
 const radioButtonsOne = document.querySelectorAll('.input-one')
 const radioButtonsTwo = document.querySelectorAll('.input-two')
 const burgerButton = document.querySelector('.burger__button')
+const hiddenEls = document.querySelectorAll('.hidden')
+const hiddenButtons = document.querySelectorAll('.offer__menu-item-link')
+const cardText = document.querySelectorAll('.offer__menu-item-text>p')
 
+hiddenButtons.forEach(button => {
+    button.addEventListener('click', function () {
+
+        hiddenEls.forEach(detail => {
+            detail.classList.toggle('block')
+            if (detail.classList.contains('block')) {
+                button.innerHTML = "Скрыть детали"
+            } else {
+                button.innerHTML = "Показать детали"
+            }
+
+
+        });
+
+
+    })
+})
 
 radioButtonsOne.forEach(button => {
 
