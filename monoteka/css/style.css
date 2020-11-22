@@ -232,6 +232,10 @@ a {
   display: none;
 }
 
+.nav__search span {
+  display: none;
+}
+
 .nav__search:hover {
   -webkit-filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
           filter: invert(49%) hue-rotate(10deg) sepia(54%) saturate(400%) contrast(4);
@@ -289,6 +293,11 @@ div.second:hover .nav__catalog-list-second-item:hover {
 }
 
 .nav__search.visible img {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nav__search.visible span {
   visibility: hidden;
   opacity: 0;
 }
@@ -1023,7 +1032,6 @@ span.offer__menu-item-price-old {
 /* BURGER MENU */
 .burger__button {
   background-color: #fff;
-  z-index: 100;
 }
 
 .burger__button span {
@@ -1066,7 +1074,11 @@ span.offer__menu-item-price-old {
 }
 
 .burger__menu {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1080,8 +1092,10 @@ span.offer__menu-item-price-old {
   background-color: #fff;
   z-index: 101;
   padding: 40px 60px;
-  -webkit-transition-duration: 800ms;
-          transition-duration: 800ms;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .burger__menu-item {
@@ -1099,9 +1113,10 @@ span.offer__menu-item-price-old {
 }
 
 .burger__menu.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 @media screen and (max-width: 1690px) {
@@ -1204,6 +1219,7 @@ span.offer__menu-item-price-old {
   }
   .nav__burger {
     display: block;
+    z-index: 102;
   }
   .nav__search {
     margin-right: 0;
@@ -1401,16 +1417,36 @@ span.offer__menu-item-price-old {
   .promo__categories-item span {
     font-size: 14px;
   }
+  .burger__button {
+    margin-left: 40px;
+  }
+  .nav {
+    padding-bottom: 10px;
+  }
   .nav__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav__logo {
+    margin: 6px 10px 10px 0;
+  }
+  .nav__search {
+    margin-right: 20px;
+  }
+  .nav__search span {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 10px;
+  }
+  .nav__search.visible .nav__search-input {
+    left: 40px;
   }
   .nav__catalog {
-    margin-right: 20px;
+    margin-right: 0;
     width: 115px;
-  }
-  .nav__catalog__logo {
-    margin: 0 50px;
   }
   .nav__catalog img {
     margin-left: 15px;
