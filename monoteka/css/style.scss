@@ -275,14 +275,14 @@ div.second:hover .nav__catalog-list-second {
     input {
         position: absolute;
         background-color: #fff;
-        width: 200px;
+        width: 100px;
         border: 2px solid black;
         display: block;
         height: 30px;
         padding: 2px 0 0 5px;
         border-radius: 8px;
         font-size: 20px;
-        transform: translateX(-140px);
+        transform: translateX(-80px);
 
         &::placeholder {
             font-size: 16px;
@@ -1330,10 +1330,9 @@ span.offer__menu-item-price-old {
     }
 
 
-
-
-
     .promo {
+        padding-bottom: 35px;
+
         &__slider a {
             margin-left: 40px;
         }
@@ -1346,6 +1345,11 @@ span.offer__menu-item-price-old {
 
     .offer__title {
         margin-left: 0;
+
+        &-item {
+            line-height: 1;
+            font-size: 30px;
+        }
     }
 
     .nav__catalog {
@@ -1367,7 +1371,73 @@ span.offer__menu-item-price-old {
 }
 
 @media screen and (max-width: 385px) {
+    .burger__menu {
+        padding-top: 30px;
+    }
+
     .promo__slider-item-title {
         left: 55px;
+    }
+
+    .promo__categories-item span {
+        font-size: 14px;
+    }
+
+    .nav {
+        &__catalog {
+            width: 80px;
+
+            img {
+                margin-left: 5px;
+            }
+
+            &:hover {
+                .nav__catalog-list-item.second {
+                    img {
+                        transform: rotate(-90deg) translateY(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .promo {
+        &__slider {
+            a {
+                margin-left: 15px;
+            }
+
+            &-item-title {
+                top: 95px;
+            }
+
+            .slick-arrow {
+                top: 460px;
+
+                &.slick-prev {
+                    left: 10px;
+                }
+
+                &.slick-next {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    .offer__menu {
+        width: 100%;
+
+        &-item {
+            &-text {
+                padding-left: 10px;
+            }
+
+            &-info {
+                padding-left: 10px;
+            }
+        }
     }
 }
