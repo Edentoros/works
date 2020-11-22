@@ -81,6 +81,11 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2
                 }
+            }, {
+                breakpoint: 685,
+                settings: {
+                    slidesToShow: 1
+                }
             }
         ]
 
@@ -91,4 +96,9 @@ burgerButton.addEventListener('click', () => {
     document.querySelector('.burger__menu').classList.toggle('open');
     document.querySelector('.burger__menu-item').classList.toggle('open');
     burgerButton.classList.toggle('open')
+    if (document.querySelector('.burger__menu').classList.contains('open')) {
+        document.body.style.position = 'fixed'
+    } else {
+        document.body.style.position = 'static'
+    }
 })
