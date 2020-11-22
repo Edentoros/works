@@ -1092,10 +1092,12 @@ span.offer__menu-item-price-old {
   background-color: #fff;
   z-index: 101;
   padding: 40px 60px;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+  -webkit-box-shadow: 0px 0px 50px -2px #000000;
+          box-shadow: 0px 0px 50px -2px #000000;
 }
 
 .burger__menu-item {
@@ -1219,7 +1221,6 @@ span.offer__menu-item-price-old {
   }
   .nav__burger {
     display: block;
-    z-index: 102;
   }
   .nav__search {
     margin-right: 0;
@@ -1411,6 +1412,9 @@ span.offer__menu-item-price-old {
   .burger__menu {
     padding-top: 30px;
   }
+  .nav__burger {
+    z-index: 102;
+  }
   .promo__slider-item-title {
     left: 55px;
   }
@@ -1445,7 +1449,7 @@ span.offer__menu-item-price-old {
     left: 40px;
   }
   .nav__catalog {
-    margin-right: 0;
+    margin-right: 10px;
     width: 115px;
   }
   .nav__catalog img {
