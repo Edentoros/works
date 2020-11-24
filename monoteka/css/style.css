@@ -709,6 +709,10 @@ div.second:hover .nav__catalog-list-second-item:hover {
   z-index: 2;
 }
 
+.offer__menu-item-link {
+  display: none;
+}
+
 .offer__menu-item-lable {
   position: absolute;
   top: 50px;
@@ -917,9 +921,9 @@ span.offer__menu-item-price-old {
   visibility: visible;
   position: absolute;
   opacity: 1;
-  left: -10px;
+  left: -5px;
   z-index: 3;
-  width: 420px;
+  width: 410px;
   height: 725px;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%);
 }
@@ -1228,6 +1232,34 @@ span.offer__menu-item-price-old {
   .offer__menu {
     width: 91%;
   }
+  .offer__menu-item-text {
+    position: relative;
+  }
+  .offer__menu-item-link {
+    opacity: 0.7;
+    padding: 5px 5px;
+    top: -45px;
+    right: 0;
+    display: block;
+    text-transform: uppercase;
+    color: #000000;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    font-size: 18px;
+    background-color: #fff;
+    position: absolute;
+  }
+  .offer__menu-item:hover h4,
+  .offer__menu-item:hover p,
+  .offer__menu-item:hover span {
+    color: #000000;
+  }
+  .offer__menu-item:hover .offer__menu-item-lable span {
+    color: #ffffff;
+  }
+  .offer__menu-item:hover .hidden {
+    display: none;
+  }
   .offer__menu {
     width: 95%;
   }
@@ -1321,34 +1353,6 @@ span.offer__menu-item-price-old {
   }
   .offer {
     padding-bottom: 40px;
-  }
-  .offer__menu-item-text {
-    position: relative;
-  }
-  .offer__menu-item-link {
-    opacity: 0.7;
-    padding: 5px 5px;
-    top: -45px;
-    right: 0;
-    display: block;
-    text-transform: uppercase;
-    color: #000000;
-    -webkit-transition-duration: 300ms;
-            transition-duration: 300ms;
-    font-size: 18px;
-    background-color: #fff;
-    position: absolute;
-  }
-  .offer__menu-item:hover h4,
-  .offer__menu-item:hover p,
-  .offer__menu-item:hover span {
-    color: #000000;
-  }
-  .offer__menu-item:hover .offer__menu-item-lable span {
-    color: #ffffff;
-  }
-  .offer__menu-item:hover .hidden {
-    display: none;
   }
   .nav__catalog-list-item.second:hover .nav__catalog-list-second-item {
     padding-left: 15px !important;
