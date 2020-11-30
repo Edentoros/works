@@ -38,6 +38,19 @@
   position: relative;
 }
 
+.main__info:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 184px;
+  border-top-left-radius: 5px;
+  display: block;
+  left: -27px;
+  top: 104px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
 .main__percent {
   display: block;
   padding-top: 16px;
@@ -77,7 +90,7 @@
   font-family: 'Gotham Pro';
   font-size: 15px;
   color: #fcd329;
-  margin-top: 9px;
+  margin-top: 7px;
 }
 
 .main__icon {
@@ -105,6 +118,7 @@
   color: #70a74b;
   margin-top: 8px;
   display: block;
+  margin-left: 3px;
 }
 
 .main__rating-triangle {
@@ -112,7 +126,7 @@
   display: inline-block;
   height: 0;
   border-style: solid;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   border-width: 0 7px 8px 7px;
   border-color: transparent transparent #70a74b transparent;
 }
@@ -165,7 +179,7 @@
 }
 
 .members {
-  padding-top: 60px;
+  padding-top: 62px;
   width: 228px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,10 +189,68 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.members:before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 20px;
+  top: 70px;
+  left: -27px;
+  display: block;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
 }
 
 .members__item {
   margin-bottom: 15px;
+}
+
+.members__item:first-of-type {
+  position: relative;
+}
+
+.members__item:first-of-type:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: 41px;
+  left: -27px;
+  display: block;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+.members__item:first-of-type:after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: 35px;
+  left: -33px;
+  display: block;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.members__item:nth-of-type(2) {
+  position: relative;
+}
+
+.members__item:nth-of-type(2):before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 12px;
+  top: 2px;
+  left: -27px;
+  display: block;
+  border-bottom-left-radius: 5px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
 }
 
 .members__text {
@@ -230,6 +302,7 @@
 .members__count {
   display: block;
   font-size: 12px;
+  margin-top: 2px;
 }
 
 .members__amount {
@@ -246,27 +319,14 @@
   display: -ms-flexbox;
   display: flex;
   width: 90px;
+  margin-top: -1px;
   background-color: #f9f9f9;
-}
-
-.members__graph span {
-  background-color: #f9f9f9;
-  border: 2px solid #ececec;
-  border-left: none;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding: 10px 0;
-  height: 33px;
-  width: 100%;
 }
 
 .members__graph-item {
   height: 26px;
   display: inline-block;
-  border-top-left-radius: 3px;
+  border-top-left-radius: 5px;
   position: relative;
   -webkit-animation: graph-fill 2s;
           animation: graph-fill 2s;
@@ -280,6 +340,20 @@
   display: block;
   -webkit-animation: graph-after-fill 2.5s;
           animation: graph-after-fill 2.5s;
+  border-bottom-left-radius: 5px;
+}
+
+.members__percent {
+  background-color: #f9f9f9;
+  border: 2px solid #ececec;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 8px 2px 10px 0;
+  height: 33px;
+  width: 100%;
+  font-size: 12px;
+  text-align: right;
 }
 
 .members__item:first-of-type .members__graph-item {
