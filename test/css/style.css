@@ -165,7 +165,7 @@
 }
 
 .members {
-  padding-top: 50px;
+  padding-top: 60px;
   width: 228px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +198,7 @@
 .members__title {
   font-weight: 700;
   width: 85px;
-  margin-right: 10px;
+  font-size: 13px;
   text-align: left;
   color: #555555;
 }
@@ -229,11 +229,14 @@
 
 .members__count {
   display: block;
+  font-size: 12px;
 }
 
 .members__amount {
   color: #9d9d9c;
   display: block;
+  font-size: 12px;
+  margin-right: 5px;
 }
 
 .members__graph {
@@ -275,23 +278,23 @@
   position: absolute;
   bottom: -7px;
   display: block;
-  -webkit-animation: graph-fill 2s;
-          animation: graph-fill 2s;
+  -webkit-animation: graph-after-fill 2.5s;
+          animation: graph-after-fill 2.5s;
 }
 
 .members__item:first-of-type .members__graph-item {
-  background-color: #70a74ba2;
-  width: 31px;
+  width: 48px;
+  background-color: #70a74b;
 }
 
 .members__item:first-of-type .members__graph-item:after {
   width: 29px;
-  background-color: #70a74b;
+  background-color: #70a74ba2;
 }
 
 .members__item:nth-of-type(2) .members__graph-item {
   background-color: #fcd329;
-  width: 32px;
+  width: 52px;
 }
 
 .members__item:nth-of-type(2) .members__graph-item:after {
@@ -301,7 +304,7 @@
 
 .members__item:last-of-type .members__graph-item {
   background-color: #ed5243;
-  width: 26px;
+  width: 40px;
 }
 
 .members__item:last-of-type .members__graph-item:after {
@@ -311,19 +314,37 @@
 
 @-webkit-keyframes graph-fill {
   0% {
-    width: 0%;
+    width: 0em;
   }
   100% {
-    width: 2.1em;
+    width: 3.1em;
   }
 }
 
 @keyframes graph-fill {
   0% {
-    width: 0%;
+    width: 0em;
   }
   100% {
-    width: 2.1em;
+    width: 3.1em;
+  }
+}
+
+@-webkit-keyframes graph-after-fill {
+  0% {
+    width: 0em;
+  }
+  100% {
+    width: 1;
+  }
+}
+
+@keyframes graph-after-fill {
+  0% {
+    width: 0em;
+  }
+  100% {
+    width: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
