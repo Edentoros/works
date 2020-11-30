@@ -1,0 +1,329 @@
+@import url(normalize.css);
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  src: url(./fonts/GothamPro-Medium.ttf), url(./fonts/GothamPro-Medium.eot), url(./fonts/GothamPro-Medium.woff);
+}
+
+@font-face {
+  font-family: 'Gotham Pro Light';
+  font-weight: 400;
+  src: url(./fonts/GothamPro-Light.ttf), url(./fonts/GothamPro-Light.eot), url(./fonts/GothamPro-Light.woff);
+}
+
+.container {
+  padding: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__loyalty {
+  text-align: center;
+}
+
+.main__info {
+  width: 228px;
+  margin: 0 auto;
+  padding: 22px 0 22px 0;
+  position: relative;
+}
+
+.main__percent {
+  display: block;
+  padding-top: 16px;
+  margin-left: -17px;
+  font-size: 47px;
+  font-family: 'Gotham Pro Light';
+  position: relative;
+}
+
+.main__percent-char {
+  position: absolute;
+  font-size: 16px;
+  right: 78px;
+  top: 39px;
+  color: #b7b2b2;
+}
+
+.main__percent-dec {
+  position: absolute;
+  top: 58px;
+  font-family: 'Gotham Pro Light';
+  right: 78px;
+  font-size: 23px;
+}
+
+.main__percent-dec:before {
+  content: ".";
+}
+
+.main__title {
+  margin-top: 1px;
+  font-family: 'Gotham Pro';
+  font-size: 21px;
+}
+
+.main__subtitle {
+  font-family: 'Gotham Pro';
+  font-size: 15px;
+  color: #fcd329;
+  margin-top: 9px;
+}
+
+.main__icon {
+  position: absolute;
+  top: -30px;
+  left: 95px;
+}
+
+.main__text {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 13px;
+  color: #b7b2b2;
+  margin-top: 3px;
+}
+
+.main__text span {
+  display: inline-block;
+  width: 100%;
+}
+
+.main__rating {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #70a74b;
+  margin-top: 8px;
+  display: block;
+}
+
+.main__rating-triangle {
+  width: 0;
+  display: inline-block;
+  height: 0;
+  border-style: solid;
+  margin-bottom: 2px;
+  border-width: 0 7px 8px 7px;
+  border-color: transparent transparent #70a74b transparent;
+}
+
+.circle-chart {
+  width: 254px;
+  height: 232px;
+  position: absolute;
+  left: -13px;
+  top: -3px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+  z-index: -1;
+}
+
+.circle-chart__circle-yellow {
+  animation: circle-chart-fill 2s reverse;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.circle-chart__circle-green {
+  animation: circle-chart-fill 2s reverse;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.circle-chart__circle-gray {
+  animation: circle-chart-fill 0s reverse;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.members {
+  padding-top: 50px;
+  width: 228px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.members__item {
+  margin-bottom: 15px;
+}
+
+.members__text {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.members__title {
+  font-weight: 700;
+  width: 85px;
+  margin-right: 10px;
+  text-align: left;
+  color: #555555;
+}
+
+.members__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.members__people {
+  margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.members__count {
+  display: block;
+}
+
+.members__amount {
+  color: #9d9d9c;
+  display: block;
+}
+
+.members__graph {
+  color: #5d5d5d;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90px;
+  background-color: #f9f9f9;
+}
+
+.members__graph span {
+  background-color: #f9f9f9;
+  border: 2px solid #ececec;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px 0;
+  height: 33px;
+  width: 100%;
+}
+
+.members__graph-item {
+  height: 26px;
+  display: inline-block;
+  border-top-left-radius: 3px;
+  position: relative;
+  -webkit-animation: graph-fill 2s;
+          animation: graph-fill 2s;
+}
+
+.members__graph-item:after {
+  content: "";
+  height: 7px;
+  position: absolute;
+  bottom: -7px;
+  display: block;
+  -webkit-animation: graph-fill 2s;
+          animation: graph-fill 2s;
+}
+
+.members__item:first-of-type .members__graph-item {
+  background-color: #70a74ba2;
+  width: 31px;
+}
+
+.members__item:first-of-type .members__graph-item:after {
+  width: 29px;
+  background-color: #70a74b;
+}
+
+.members__item:nth-of-type(2) .members__graph-item {
+  background-color: #fcd329;
+  width: 32px;
+}
+
+.members__item:nth-of-type(2) .members__graph-item:after {
+  width: 28px;
+  background-color: #fcd229ad;
+}
+
+.members__item:last-of-type .members__graph-item {
+  background-color: #ed5243;
+  width: 26px;
+}
+
+.members__item:last-of-type .members__graph-item:after {
+  background-color: #ed5143ad;
+  width: 31px;
+}
+
+@-webkit-keyframes graph-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 2.1em;
+  }
+}
+
+@keyframes graph-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 2.1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
